@@ -1,0 +1,2021 @@
+/* -=-=-=- BODY -=-=-=- */
+* {
+    min-width: 0;
+    min-height: 0;
+}
+
+html,
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+a {
+    color: #333;
+}
+
+.pc_block {
+    display: block;
+}
+
+.pc_inline {
+    display: inline;
+}
+
+.sp_block {
+    display: none;
+}
+
+.sp_inline {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+/* -=-=-=- メニュー -=-=-=- */
+#pc_nav {
+    background-color: #fff;
+    /*border: 1px solid #00aa32;*/
+    height: 54px;
+    position: fixed;
+    top: 20px;
+    left: calc(50% - 500px);
+    width: 946px;
+    z-index: 9999;
+    margin: 0 auto;
+    border-radius: 16px;
+    padding: 0 27px;
+
+    #pc_nav_wrap {
+
+        #pc_nav_inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 54px;
+            margin-left: 10px;
+            margin-right: 25px;
+
+            h1 {
+                text-align: center;
+                margin-right: 60px;
+
+                img {
+                    height: 30px;
+                    width: auto;
+                }
+            }
+
+            .pcmenubtn_1 {
+                text-align: center;
+                font-size: 14px;
+            }
+
+            .pcmenubtn_2 {
+                text-align: center;
+                font-size: 14px;
+                background-color: #00aa32;
+                padding: 10px 30px 12px;
+                border-radius: 20px;
+
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+/* -=-=-=- フッター -=-=-=- */
+.footer {
+    .contact {
+        width: 100%;
+        padding: 50px 0;
+        background-color: #00aa32;
+        margin-bottom: 3px;
+
+        .inner {
+            width: 980px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+
+            .copy {
+                width: 400px;
+            }
+
+            .btn {
+                width: 470px;
+                padding-top: 5px;
+            }
+        }
+    }
+
+    .footer_menu {
+        width: 100%;
+        padding: 100px 0;
+        background-color: #effaf2;
+
+        .wrap {
+            display: flex;
+            justify-content: space-between;
+            width: 1000px;
+            margin: 0 auto;
+
+            .logo {
+                width: 300px;
+                margin-right: 80px;
+            }
+
+            .m__1 {
+                margin-top: 10px;
+
+                .title {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 2.5;
+
+                    a {
+                        color: #00aa32;
+                    }
+
+                }
+
+                .txt {
+                    font-size: 12px;
+                    line-height: 2;
+
+                    a {
+                        color: #999;
+                    }
+
+                }
+
+                .tit_u {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 2.5;
+                    margin-top: 10px;
+
+                    a {
+                        color: #00aa32;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer_copy {
+        background-color: #effaf2;
+        width: 100%;
+
+        .inner {
+            width: 1000px;
+            margin: 0 auto;
+            line-height: 6;
+            font-size: 10px;
+            letter-spacing: 0.2em;
+        }
+
+    }
+}
+
+/* -=-=-=- Fade効果 -=-=-=- */
+.fade {
+    opacity: 0;
+    transform: translateY(36px);
+    transition: all 1000ms;
+}
+
+.fade.effect-scroll {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade_right {
+    opacity: 0;
+    transform: translateX(-25px);
+    transition: all 1000ms;
+}
+
+.fade_right.effect-scroll {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade_left {
+    opacity: 0;
+    transform: translateX(25px);
+    transition: all 1000ms;
+}
+
+.fade_left.effect-scroll {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*-----------------------------------------------------*/
+// トップページ　＞　スライダー
+/*-----------------------------------------------------*/
+#top_slider_wrap {
+    position: relative;
+
+    .slick_01 {
+        width: 100%;
+        min-width: 1000px;
+
+        .top_slider_pnl {
+            width: 100%;
+
+            position: relative;
+
+            .top_slider_ph {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .top_msg {
+        position: absolute;
+        top: 16.875vw;
+        left: 53vw;
+
+        .box {
+            background-color: #fff;
+            padding: 0 20px;
+            font-size: 42px;
+            text-align: right;
+            line-height: 1.5;
+            margin-bottom: 25px;
+            width: fit-content;
+            margin-left: auto;
+        }
+    }
+}
+
+/* Slick Custom */
+.slick-dots {
+    bottom: 5px !important;
+
+    li button:before {
+        color: #fff;
+    }
+
+    li.slick-active button:before {
+        color: #fff;
+    }
+}
+
+.arrow-mae {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    z-index: 1000;
+}
+
+.arrow-mae:hover {
+    opacity: 0.5;
+}
+
+.arrow-tsugi {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    z-index: 1001;
+}
+
+.arrow-tsugi:hover {
+    opacity: 0.5;
+}
+
+/*-----------------------------------------------------*/
+// トップページ　＞　メッセージ
+/*-----------------------------------------------------*/
+.top__message {
+    position: relative;
+    width: 100%;
+
+    .main_txt {
+        width: 500px;
+        margin: 100px auto;
+        text-align: center;
+        line-height: 2.5;
+    }
+
+    .img__1 {
+        width: 27vw;
+        position: absolute;
+        top: 100px;
+        left: 0;
+    }
+
+    .img__2 {
+        width: 24vw;
+        position: absolute;
+        top: 50px;
+        right: 0;
+    }
+
+    .img__3 {
+        width: 18vw;
+        position: absolute;
+        top: 270px;
+        right: 8vw;
+    }
+
+    .img__4 {
+        width: 960px;
+        margin: 0 auto;
+    }
+}
+
+/*-----------------------------------------------------*/
+// トップページ　＞　会社概要
+/*-----------------------------------------------------*/
+.top_overview {
+    padding: 120px 0;
+    width: 100%;
+    min-width: 1000px;
+    background-color: #effaf2;
+
+    .title {
+        text-align: center;
+        padding-bottom: 80px;
+
+        .top {
+            font-size: 42px;
+            font-weight: 400;
+            color: #00aa32;
+            letter-spacing: 0.2em;
+            padding-bottom: 15px;
+        }
+
+        .btm {
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.2em;
+        }
+    }
+
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 900px;
+        margin: 0 auto 80px;
+
+        .copy {
+            width: 450px;
+
+            .ttl {
+                font-size: 27px;
+                font-weight: 400;
+                margin-bottom: 25px;
+            }
+
+            .txt {
+                line-height: 2;
+                margin-bottom: 25px;
+                text-align: justify;
+            }
+
+            .btn {
+                font-weight: 700;
+                border: 1px solid #00aa32;
+                background-color: #fff;
+                border-radius: 7px;
+                width: fit-content;
+                padding: 12px 40px;
+            }
+        }
+
+        .ph {
+            width: 400px;
+
+            img {
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .wrap {
+        display: flex;
+        justify-content: space-between;
+        width: 750px;
+        margin: 0 auto;
+
+        .maru {
+            width: 120px;
+            height: 120px;
+            border: 1px solid #00aa32;
+            background-color: #fff;
+            border-radius: 60px;
+            text-align: center;
+            display: table;
+
+            div {
+                display: table-cell;
+                vertical-align: middle;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+/*-----------------------------------------------------*/
+// トップページ　＞　ニュース
+/*-----------------------------------------------------*/
+.top_news {
+    padding: 120px 0;
+    width: 100%;
+    min-width: 1000px;
+
+    .title {
+        text-align: center;
+        padding-bottom: 80px;
+
+        .top {
+            font-size: 42px;
+            font-weight: 400;
+            color: #00aa32;
+            letter-spacing: 0.1em;
+            padding-bottom: 15px;
+        }
+
+        .btm {
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.2em;
+        }
+    }
+
+    .inner {
+        width: 800px;
+        margin: 0 auto;
+
+        .report {
+            border-bottom: 1px solid #cacaca;
+            padding-bottom: 40px;
+            padding-top: 40px;
+
+            .wrapper {
+                display: flex;
+                font-size: 14px;
+                font-weight: 600;
+                margin-bottom: 10px;
+
+                .date {
+                    padding: 5px 15px 5px 0;
+                }
+
+            }
+
+            .ttl {
+                line-height: 2;
+                text-align: justify;
+            }
+        }
+
+        .toarchive {
+            font-weight: 700;
+            border: 1px solid #00aa32;
+            border-radius: 10px;
+            width: fit-content;
+            margin: 50px auto 50px;
+            padding: 12px 20px;
+        }
+    }
+}
+
+/*-----------------------------------------------------*/
+// トップページ　＞　事業案内
+/*-----------------------------------------------------*/
+.top_projects {
+    padding: 120px 0;
+    width: 100%;
+    min-width: 1000px;
+    background-color: #effaf2;
+
+    .title {
+        text-align: center;
+        padding-bottom: 80px;
+
+        .top {
+            font-size: 42px;
+            font-weight: 400;
+            color: #00aa32;
+            letter-spacing: 0.2em;
+            padding-bottom: 15px;
+        }
+
+        .btm {
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.2em;
+        }
+    }
+
+    .inner {
+        width: 960px;
+        margin: 0 auto;
+
+        .wrapper {
+            position: relative;
+
+            .mainvis {
+                img {
+                    border-radius: 10px;
+                }
+            }
+
+            .is_btn_l {
+                width: 250px;
+                position: absolute;
+                bottom: -58px;
+                left: 25px;
+            }
+
+            .is_btn_r {
+                width: 250px;
+                position: absolute;
+                bottom: -58px;
+                right: 25px;
+            }
+
+            .panel {
+                border-radius: 10px;
+                background-color: rgba(255, 255, 255, 0.75);
+                padding: 20px 30px;
+                width: 380px;
+
+                .lead {
+                    color: #00aa32;
+                    font-size: 12px;
+                    margin-bottom: 10px;
+                    letter-spacing: 0.1em;
+                }
+
+                .num {
+                    color: #00aa32;
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                    letter-spacing: 0.1em;
+                }
+
+                .tit {
+                    color: #00aa32;
+                    font-size: 32px;
+                    margin-bottom: 10px;
+                    letter-spacing: 0.1em;
+                }
+
+                .txt {
+                    font-size: 14px;
+                    text-align: justify;
+                    line-height: 1.75;
+                    margin-bottom: 20px;
+                }
+
+                .btn {
+                    color: #fff;
+                    background-color: #00aa32;
+                    border-radius: 10px;
+                    width: fit-content;
+                    padding: 12px 20px;
+                    letter-spacing: 0.1em;
+                }
+            }
+
+            .p_right {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+
+            .p_left {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+            }
+        }
+
+        .w_mgn_btm {
+            margin-bottom: 120px;
+        }
+    }
+}
+
+/*-----------------------------------------------------*/
+// トップページ　＞　採用情報
+/*-----------------------------------------------------*/
+.top_recruit {
+    padding: 120px 0;
+    width: 100%;
+    min-width: 1000px;
+
+    .title {
+        text-align: center;
+        padding-bottom: 80px;
+
+        .top {
+            font-size: 42px;
+            font-weight: 400;
+            color: #00aa32;
+            letter-spacing: 0.2em;
+            padding-bottom: 15px;
+        }
+
+        .btm {
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.2em;
+        }
+    }
+
+    .inner {
+        width: 60%;
+        min-width: 1000px;
+        margin: 0 auto;
+
+        .copy {
+            font-size: 36px;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-align: center;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .txt {
+            text-align: center;
+            line-height: 2;
+            margin-bottom: 50px;
+        }
+
+        .btn_wrap {
+            position: relative;
+            width: 680px;
+            margin-bottom: 25px;
+
+            .img {
+                img {
+                    border-radius: 10px;
+                }
+            }
+
+            .pos {
+                border-radius: 10px;
+                background-color: rgba(255, 255, 255, 0.75);
+                padding: 20px 30px;
+                width: fit-content;
+                position: absolute;
+                bottom: 20px;
+                left: 30px;
+                font-size: 24px;
+                color: #00aa32;
+                font-weight: 500;
+
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .mgn_left {
+            margin-left: auto;
+        }
+
+        .btn_flex {
+            display: flex;
+            justify-content: space-evenly;
+
+            .box {
+                width: 485px;
+                position: relative;
+
+                .img {
+                    img {
+                        border-radius: 10px;
+                    }
+                }
+
+                .pos {
+                    border-radius: 10px;
+                    background-color: rgba(255, 255, 255, 0.75);
+                    padding: 20px 30px;
+                    width: fit-content;
+                    position: absolute;
+                    bottom: 20px;
+                    right: 30px;
+                    font-size: 24px;
+                    color: #00aa32;
+                    font-weight: 500;
+
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .mgn_top {
+                margin-top: 3.0vw;
+            }
+        }
+    }
+}
+
+/*-----------------------------------------------------*/
+// トップページ　＞　アクセス
+/*-----------------------------------------------------*/
+.top_access {
+    padding: 120px 0;
+    width: 100%;
+    min-width: 1000px;
+    background-color: #effaf2;
+
+    .title {
+        text-align: center;
+        padding-bottom: 80px;
+
+        .top {
+            font-size: 42px;
+            font-weight: 400;
+            color: #00aa32;
+            letter-spacing: 0.2em;
+            padding-bottom: 15px;
+        }
+
+        .btm {
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.2em;
+        }
+    }
+
+    .map_outer {
+        width: 75%;
+        min-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .box {
+            width: 32%;
+
+            iframe {
+                width: 100%;
+                aspect-ratio: 9/16;
+            }
+
+            .txt {
+                font-size: 14px;
+
+                .name {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #00aa32;
+                    margin: 20px 0 10px;
+                }
+
+                .btn {
+                    color: #fff;
+                    background-color: #00aa32;
+                    border-radius: 10px;
+                    width: fit-content;
+                    padding: 12px 20px;
+                    letter-spacing: 0.1em;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+/*-----------------------------------------------------*/
+// ページヘッダー
+/*-----------------------------------------------------*/
+.page_header {
+    overflow: hidden;
+    width: 100%;
+    min-width: 1000px;
+
+    .txt {
+        width: 1000px;
+        margin: 180px auto 0;
+
+        .tit {
+            color: #00aa32;
+            font-size: 36px;
+            letter-spacing: 0.15em;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .eng {
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.2em;
+        }
+    }
+
+    .over_header {
+        margin-top: 50px;
+        width: calc(50% + 500px);
+        margin-left: calc(50% - 500px);
+        height: 300px;
+        border-radius: 150px 0 0 150px;
+        background-image: url("../img/over__title_img.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .acc_header {
+        margin-top: 50px;
+        width: calc(50% + 500px);
+        margin-left: calc(50% - 500px);
+        height: 300px;
+        border-radius: 150px 0 0 150px;
+        background-image: url("../img/acc__title_img.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .pjt_submenu {
+        display: flex;
+        justify-content: space-between;
+        width: 800px;
+        margin: 50px auto 100px;
+
+        div {
+            font-size: 14px;
+        }
+    }
+}
+
+/*-----------------------------------------------------*/
+// 会社概要　＞　企業理念
+/*-----------------------------------------------------*/
+.over_philosophy {
+    width: 1000px;
+    margin: 120px auto;
+
+    .tit_wrap {
+        margin-bottom: 45px;
+
+        .copy {
+            font-size: 36px;
+            color: #00aa32;
+            letter-spacing: 0.2em;
+            margin-bottom: 10px;
+        }
+
+        .eng {
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.2em;
+        }
+    }
+
+    .txt_wrap {
+        display: flex;
+        justify-content: space-between;
+
+        .imgbox {
+            width: 27%;
+        }
+
+        .txtbox {
+            width: 67%;
+
+            .eyechach_a {
+                background-color: #1ba572;
+                color: #fff;
+                font-size: 14px;
+                padding: 7px 15px;
+                width: fit-content;
+                margin-bottom: 15px;
+            }
+
+            .catch_copy_a {
+                color: #1ba572;
+                font-size: 24px;
+                font-weight: 500;
+                letter-spacing: 0.2em;
+                margin-bottom: 15px;
+            }
+
+            .eyechach_b {
+                background-color: #87d334;
+                color: #fff;
+                font-size: 14px;
+                padding: 7px 15px;
+                width: fit-content;
+                margin-bottom: 15px;
+            }
+
+            .catch_copy_b {
+                color: #87d334;
+                font-size: 24px;
+                font-weight: 500;
+                letter-spacing: 0.2em;
+                margin-bottom: 15px;
+            }
+
+            .eyechach_c {
+                background-color: #55cfb0;
+                color: #fff;
+                font-size: 14px;
+                padding: 7px 15px;
+                width: fit-content;
+                margin-bottom: 15px;
+            }
+
+            .catch_copy_c {
+                color: #55cfb0;
+                font-size: 24px;
+                font-weight: 500;
+                letter-spacing: 0.2em;
+                margin-bottom: 15px;
+            }
+
+            .main_txt {
+                text-align: justify;
+                line-height: 1.75;
+
+                span {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+
+            .mgn_btm {
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
+
+/*-----------------------------------------------------*/
+// 会社概要　＞　社長挨拶
+/*-----------------------------------------------------*/
+.over_message {
+    width: 100%;
+    background: linear-gradient(180deg, #fff 0%, #fff 50%, #effaf2 50%, #effaf2 100%);
+
+    .inner {
+        width: 1000px;
+        margin: 120px auto;
+
+        .tit_wrap {
+            margin-bottom: 45px;
+
+            .copy {
+                font-size: 36px;
+                color: #00aa32;
+                letter-spacing: 0.2em;
+                margin-bottom: 10px;
+            }
+
+            .eng {
+                font-size: 12px;
+                font-weight: 500;
+                letter-spacing: 0.2em;
+            }
+        }
+
+        .txt_wrap {
+            display: flex;
+            justify-content: space-between;
+
+            .box_ph {
+                width: 36%;
+            }
+
+            .box_txt {
+                width: 58%;
+
+                .tit {
+                    font-size: 24px;
+                    color: #00aa32;
+                    line-height: 1.5;
+                    letter-spacing: 0.1em;
+                    margin-top: 50px;
+                    margin-bottom: 20px;
+                }
+
+                .copy {
+                    line-height: 1.75;
+                    text-align: justify;
+                }
+
+                .name {
+                    font-size: 21px;
+                    letter-spacing: 0.1em;
+                    line-height: 5;
+                }
+            }
+        }
+    }
+}
+
+/*-----------------------------------------------------*/
+// 会社概要　＞　企業概要
+/*-----------------------------------------------------*/
+.over_profile {
+    width: 1000px;
+    margin: 120px auto;
+
+    .tit_wrap {
+        margin-bottom: 45px;
+
+        .copy {
+            font-size: 36px;
+            color: #00aa32;
+            letter-spacing: 0.2em;
+            margin-bottom: 10px;
+        }
+
+        .eng {
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.2em;
+        }
+    }
+
+    .detail_wrap {
+        width: 90%;
+        margin-left: 10%;
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+
+            th {
+                color: #00aa32;
+                font-weight: 500;
+                text-align: left;
+                padding: 20px 15px;
+                border-bottom: 1px solid #ddd;
+                vertical-align: top;
+                line-height: 1.75;
+                width: 15%;
+            }
+
+            td {
+                text-align: left;
+                padding: 20px 15px;
+                border-bottom: 1px solid #ddd;
+                vertical-align: top;
+                line-height: 1.75;
+            }
+        }
+    }
+}
+
+/*-----------------------------------------------------*/
+// 会社概要　＞　沿革
+/*-----------------------------------------------------*/
+.over_history {
+    width: 1000px;
+    margin: 120px auto 240px;
+
+    .tit_wrap {
+        margin-bottom: 45px;
+
+        .copy {
+            font-size: 36px;
+            color: #00aa32;
+            letter-spacing: 0.2em;
+            margin-bottom: 10px;
+        }
+
+        .eng {
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.2em;
+        }
+    }
+
+    .detail_wrap {
+        display: flex;
+        justify-content: space-between;
+
+        .nenpyo {
+            width: 60%;
+            margin-left: 10%;
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+
+                th {
+                    color: #00aa32;
+                    font-weight: 500;
+                    text-align: left;
+                    padding: 20px 15px;
+                    border-bottom: 1px solid #ddd;
+                    vertical-align: top;
+                    line-height: 1.75;
+                    width: 27%;
+                }
+
+                td {
+                    text-align: justify;
+                    padding: 20px 15px;
+                    border-bottom: 1px solid #ddd;
+                    vertical-align: top;
+                    line-height: 1.75;
+                }
+            }
+        }
+
+        .phzone {
+            width: 28%;
+            margin-left: 2%;
+            margin-top: 15px;
+
+            .mgn_btm {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+.slick_01 {
+    display: none;
+}
+
+/*-----------------------------------------------------*/
+// 事業案内　＞　共通パーツ
+/*-----------------------------------------------------*/
+.pjt_box {
+    .title_wrap {
+        overflow: hidden;
+        width: 100%;
+        min-width: 1000px;
+        margin: 0 auto 50px;
+
+        .bar {
+            width: calc(50% + 500px);
+            margin-left: calc(50% - 500px);
+            height: 300px;
+            border-radius: 150px 0 0 150px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+
+            .name {
+                position: absolute;
+                bottom: 30px;
+                left: 120px;
+                background-color: rgba(255, 255, 255, 0.75);
+                padding: 18px 70px;
+                border-radius: 40px;
+
+                .jpn {
+                    color: #00aa32;
+                    font-size: 27px;
+                    letter-spacing: 0.15em;
+                    margin-bottom: 5px;
+                }
+
+                .eng {
+                    font-size: 12px;
+                    letter-spacing: 0.15em;
+                }
+            }
+        }
+
+        .bar_left {
+            width: calc(50% + 500px);
+            margin-right: calc(50% - 500px);
+            height: 300px;
+            border-radius: 0 150px 150px 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+
+            .name {
+                position: absolute;
+                bottom: 30px;
+                right: 120px;
+                background-color: rgba(255, 255, 255, 0.75);
+                padding: 18px 70px;
+                border-radius: 40px;
+
+                .jpn {
+                    color: #00aa32;
+                    font-size: 27px;
+                    letter-spacing: 0.15em;
+                    margin-bottom: 5px;
+                }
+
+                .eng {
+                    font-size: 12px;
+                    letter-spacing: 0.15em;
+                }
+            }
+        }
+
+        .sales_bg {
+            background-image: url("../img/pjt__sec1_00.jpg");
+        }
+
+        .vinyl_bg {
+            background-image: url("../img/pjt__sec2_00.jpg");
+        }
+
+        .agri_bg {
+            background-image: url("../img/pjt__sec3_00.jpg");
+        }
+
+        .flower_bg {
+            background-image: url("../img/pjt__sec4_00.jpg");
+        }
+
+        .ec_bg {
+            background-image: url("../img/pjt__sec5_00.jpg");
+        }
+
+        .admin_bg {
+            background-image: url("../img/pjt__sec6_00.jpg");
+        }
+
+        .rec_bg {
+            background-image: url("../img/rec__title_img.jpg");
+        }
+    }
+
+    .catch_copy {
+        width: 1000px;
+        margin: 0 auto 25px;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.75;
+        color: #00aa32;
+    }
+
+    /*-----------------------------------------------------*/
+    // 事業案内　＞　01農業資材販売
+    /*-----------------------------------------------------*/
+    .sales_box {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        .sales_txt {
+            width: 400px;
+            margin-left: calc(50% - 500px);
+
+            .name_jp {
+                color: #00aa32;
+                font-size: 21px;
+                margin-bottom: 5px;
+            }
+
+            .name_en {
+                color: #00aa32;
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+
+            .body_copy {
+                line-height: 1.75;
+                text-align: justify;
+            }
+        }
+
+        .sales_ph {
+            width: 50%;
+            margin-right: 50px;
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .sales_photo {
+        width: 1000px;
+        margin: 0 auto 120px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        .sph_01 {
+            width: 500px;
+
+            img {
+                border-radius: 10px;
+            }
+        }
+
+        .sph_02 {
+            width: 450px;
+            margin-top: 200px;
+
+            img {
+                border-radius: 10px;
+            }
+        }
+
+        .sph_03 {
+            position: absolute;
+            top: -400px;
+            right: 0;
+        }
+    }
+
+    .store {
+        width: 1000px;
+        margin: 0 auto 120px;
+
+        .name_jp {
+            color: #00aa32;
+            font-size: 21px;
+            margin-bottom: 5px;
+        }
+
+        .name_en {
+            color: #00aa32;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .inner {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+
+            .main_vis {
+                width: 600px;
+
+                img {
+                    border-radius: 10px;
+                }
+            }
+
+            .main_txt {
+                width: 350px;
+
+                .copy {
+                    line-height: 1.75;
+                    text-align: justify;
+                    margin-bottom: 20px;
+                }
+
+                .ph {
+                    img {
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+
+        .sub_ph {
+            margin-left: 120px;
+            width: 550px;
+
+            img {
+                border-radius: 10px;
+            }
+        }
+    }
+
+    /*-----------------------------------------------------*/
+    // 事業案内　＞　02ハウス用ビニール加工
+    /*-----------------------------------------------------*/
+    .vinyl_box {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        .vinyl_txt {
+            width: 350px;
+            margin-left: calc(50% - 500px);
+            line-height: 1.75;
+            text-align: justify;
+        }
+
+        .vinyl_ph {
+            width: calc(36% + 100px);
+            margin-right: 14%;
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .vinyl_photo {
+        width: 1000px;
+        margin: 0 auto 50px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        .sph_01 {
+            width: 450px;
+
+            img {
+                border-radius: 10px;
+            }
+
+            .cap {
+                font-size: 12px;
+                margin-top: 5px;
+                line-height: 1.5;
+                text-align: justify;
+            }
+        }
+
+        .sph_02 {
+            width: 500px;
+            margin-top: 100px;
+
+            img {
+                border-radius: 10px;
+            }
+
+            .cap {
+                font-size: 12px;
+                margin-top: 5px;
+                line-height: 1.5;
+                text-align: justify;
+            }
+        }
+    }
+
+    .slick_01 {
+        margin-bottom: 200px;
+
+        .top_slider_panel {
+            margin-right: 20px;
+
+            img {
+                border-radius: 10px;
+            }
+        }
+
+        .mgn_top {
+            margin-top: 20px;
+        }
+    }
+
+    /*-----------------------------------------------------*/
+    // 事業案内　＞　03青果生産
+    /*-----------------------------------------------------*/
+    .agri_box {
+        width: 1000px;
+        margin: 0 auto 200px;
+
+        .inner {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+
+            .txt {
+                width: 300px;
+                line-height: 1.75;
+                text-align: justify;
+            }
+
+            .ph {
+                width: 650px;
+
+                img {
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .ph_box {
+            width: 560px;
+
+            img {
+                border-radius: 10px;
+            }
+
+            .cap {
+                font-size: 12px;
+                margin-top: 5px;
+                line-height: 1.5;
+                text-align: justify;
+            }
+        }
+
+        .mgn_b {
+            margin-bottom: 50px;
+        }
+
+        .mgn_l {
+            margin-left: auto;
+        }
+    }
+
+    /*-----------------------------------------------------*/
+    // 事業案内　＞　04花卉販売
+    /*-----------------------------------------------------*/
+    .flower_box {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        .txt {
+            width: 400px;
+            margin-left: calc(50% - 500px);
+
+            .body_copy {
+                line-height: 1.75;
+                text-align: justify;
+            }
+        }
+
+        .ph {
+            width: calc(50% - 30px);
+            margin-right: 80px;
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .flower_photo {
+        width: 1000px;
+        margin: 0 auto 50px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        .sph_01 {
+            width: 500px;
+
+            img {
+                border-radius: 10px;
+            }
+        }
+
+        .sph_02 {
+            width: 450px;
+            margin-top: 200px;
+
+            img {
+                border-radius: 10px;
+            }
+        }
+    }
+
+    /*-----------------------------------------------------*/
+    // 事業案内　＞　05EC販売
+    /*-----------------------------------------------------*/
+    .ec_wrap {
+        width: 1000px;
+        margin: 0 auto 200px;
+        display: flex;
+        justify-content: space-between;
+
+        .txt_box {
+            width: 450px;
+
+            .copy {
+                line-height: 1.75;
+                text-align: justify;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    /*-----------------------------------------------------*/
+    // 事業案内　＞　06販売事務
+    /*-----------------------------------------------------*/
+    .admin_box {
+        width: 1000px;
+        margin: 0 auto 200px;
+        display: flex;
+        justify-content: space-between;
+
+        .txt {
+            width: 450px;
+            line-height: 1.75;
+            text-align: justify;
+        }
+
+        .ph {
+            width: 500px;
+
+            img {
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+/*-----------------------------------------------------*/
+// アクセス
+/*-----------------------------------------------------*/
+.map_wrap {
+    width: 1000px;
+    margin: 60px auto;
+
+    .title {
+        .jpn {
+            color: #00aa32;
+            font-size: 26px;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .eng {
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+    }
+
+    .txt {
+        display: flex;
+        align-items: flex-start;
+
+        .ph {
+            width: 40%;
+            margin-right: 3%;
+
+            img {
+                border-radius: 10px;
+            }
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 57%;
+
+            th {
+                color: #00aa32;
+                font-weight: 500;
+                text-align: left;
+                padding: 5px;
+                vertical-align: top;
+                line-height: 1.75;
+                width: 14%;
+            }
+
+            td {
+                text-align: left;
+                padding: 5px;
+                vertical-align: top;
+                line-height: 1.75;
+                width: fit-content;
+            }
+        }
+    }
+
+    .box {
+        width: 100%;
+
+
+    }
+}
+
+.map_box {
+    width: 100%;
+    min-width: 1000px;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    iframe {
+        width: 100%;
+        aspect-ratio: 25/9;
+        border-radius: 10px;
+    }
+}
+
+.mgn_btm {
+    margin-bottom: 180px;
+}
+
+/*-----------------------------------------------------*/
+// News
+/*-----------------------------------------------------*/
+.news_wrap {
+    width: 800px;
+    margin: 100px auto 120px;
+}
+
+.news_outer {
+    width: 800px;
+    margin: 100px auto 120px;
+
+    .date {
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    .title {
+        font-size: 21px;
+        margin-bottom: 50px;
+    }
+
+    .wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 25px;
+
+        .txt {
+            width: 55%;
+            line-height: 1.75;
+            font-size: 14px;
+        }
+
+        .ph {
+            width: 40%;
+        }
+    }
+
+    .rev_wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        margin-bottom: 25px;
+
+        .txt {
+            width: 55%;
+            line-height: 1.75;
+            font-size: 14px;
+        }
+
+        .ph {
+            width: 40%;
+        }
+    }
+}
+
+/*-----------------------------------------------------*/
+// 採用情報　＞　キャッチコピー
+/*-----------------------------------------------------*/
+.rec__copy {
+    width: 1000px;
+    margin: 0 auto;
+
+    .main_copy {
+        margin: 60px 0 30px;
+        color: #00aa32;
+        font-size: 36px;
+        text-align: center;
+        line-height: 1.5;
+        letter-spacing: 0.1em
+    }
+
+    .lead_copy {
+        font-size: 21px;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .body_copy {
+        text-align: center;
+        line-height: 2.5;
+        margin-bottom: 75px;
+    }
+}
+
+/*-----------------------------------------------------*/
+// 採用情報　＞　スライダー
+/*-----------------------------------------------------*/
+.rec__slider {
+    margin-bottom: 120px;
+
+    .slick_01 {
+        .top_slider_panel {
+            margin-right: 20px;
+
+            img {
+                border-radius: 10px;
+            }
+        }
+
+        .mgn_top {
+            margin-top: 20px;
+        }
+    }
+}
+
+/*-----------------------------------------------------*/
+// 採用情報　＞　インタビュー
+/*-----------------------------------------------------*/
+.rec__inter {
+    width: 1000px;
+    margin: 0 auto 160px;
+
+    .tit_wrap {
+        margin-bottom: 45px;
+
+        .copy {
+            font-size: 36px;
+            color: #00aa32;
+            letter-spacing: 0.1em;
+            margin-bottom: 10px;
+        }
+
+        .eng {
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.2em;
+        }
+    }
+
+    .job_tit {
+        position: relative;
+        margin-bottom: 50px;
+
+        .ph {
+            img {
+                border-radius: 10px;
+            }
+        }
+
+        .txt {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: #fff;
+            border-radius: 0 10px 0 0;
+            padding: 25px 40px 10px 2px;
+            color: #00aa32;
+
+            .jpn {
+                font-size: 21px;
+                margin-bottom: 5px;
+            }
+
+            .eng {
+                font-size: 12px;
+                font-weight: 500;
+                letter-spacing: 0.2em;
+            }
+        }
+    }
+
+    .name_wrap {
+        display: flex;
+        margin-bottom: 30px;
+
+        .ph {
+            width: 160px;
+        }
+
+        .box {
+            margin-left: 20px;
+            margin-top: 45px;
+
+            .name {
+                font-size: 17px;
+                letter-spacing: 0.2em;
+                margin-bottom: 15px;
+            }
+
+            .spec {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .txt_box {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        .copy {
+            width: 400px;
+
+            .catch {
+                font-size: 21px;
+                line-height: 1.5;
+                margin-bottom: 15px;
+                font-weight: 500;
+            }
+
+            .body_txt {
+                line-height: 1.75;
+                text-align: justify;
+            }
+        }
+
+        .ph {
+            width: 550px;
+        }
+    }
+
+    .fle_rev {
+        flex-direction: row-reverse;
+    }
+}
+
+/*-----------------------------------------------------*/
+// 採用情報　＞　募集要項
+/*-----------------------------------------------------*/
+.details__wrap {
+    width: 100%;
+    padding: 120px 0;
+    background-color: #effaf2;
+
+    .tit_box {
+        width: 1000px;
+        margin: 0 auto 50px;
+
+        .jpn {
+            font-size: 36px;
+            color: #00aa32;
+            letter-spacing: 0.1em;
+            margin-bottom: 10px;
+        }
+
+        .eng {
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.2em;
+        }
+    }
+
+    .table_wrap {
+        width: 800px;
+        margin: 0 auto;
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+
+            th {
+                color: #00aa32;
+                font-weight: 500;
+                text-align: left;
+                padding: 20px 15px;
+                border-bottom: 1px solid #ddd;
+                vertical-align: top;
+                line-height: 1.75;
+                width: 20%;
+            }
+
+            td {
+                text-align: left;
+                padding: 20px 15px;
+                border-bottom: 1px solid #ddd;
+                vertical-align: top;
+                line-height: 1.75;
+            }
+        }
+    }
+}
+
+/*-----------------------------------------------------*/
+// 採用情報　＞　お問い合わせ
+/*-----------------------------------------------------*/
+.inquiry__wrap {
+    width: 1000px;
+    margin: 120px auto 180px;
+
+    .jpn {
+        font-size: 36px;
+        color: #00aa32;
+        letter-spacing: 0.1em;
+        margin-bottom: 10px;
+    }
+
+    .eng {
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.2em;
+    }
+
+    .img {
+        margin-top: 80px;
+    }
+}
+
+
+
+
+
+
+/*-----------------------------------------------------*/
+// Smartphone
+/*-----------------------------------------------------*/
+
+@media only screen and (max-width: 800px) {
+    @import "_sp";
+}
