@@ -12,397 +12,418 @@
 
 get_header(); ?>
 
-<!-- ヘッドパーツ -->
-<div class="sp_block logo__sp">
-    <a href="<?= esc_url(home_url()); ?>"><img alt="TAKAHASHI GROUP" src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/menu_logo.svg"></a>
+
+
+<!-- ページヘッダー -->
+<div class="top_logo_sp sp_block">
+    <img alt="株式会社アグリアーツ" src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/logo.png">
 </div>
-<div class="head_parts">
-    <div class="wrap">
-        <div class="ttl">
+<div class="page_header">
+    <div class="txt">
+        <div class="tit">
             事業案内
         </div>
-        <div class="enttl">
+        <div class="eng">
             Projects
         </div>
     </div>
-    <div class="sub_menu_pjt-1">
-        <div><a href="#takahashi">高橋株式会社 不動産事業部</a></div>
-        <div>｜</div>
-        <div><a href="#sportsgarden">スポーツガーデン株式会社</a></div>
-        <div>｜</div>
-        <div><a href="#esta">エスタ株式会社</a></div>
+    <div class="pjt_submenu">
+        <a href="#sales">
+            <div>
+                農業資材販売
+            </div>
+        </a>
+        <a href="#vinyl">
+            <div>
+                ハウス用ビニール加工
+            </div>
+        </a>
+        <a href="#agri">
+            <div>
+                青果生産
+            </div>
+        </a>
+        <a href="#flower">
+            <div>
+                花卉販売
+            </div>
+        </a>
+        <a href="#ec">
+            <div>
+                EC販売
+            </div>
+        </a>
+        <a href="#admin">
+            <div>
+                営業事務
+            </div>
+        </a>
     </div>
-    <div class="sub_menu_pjt-2">
-        <div><a href="#bldining">ビーエルダイニング株式会社</a></div>
-        <div>｜</div>
-        <div><a href="#arcfield">アークフィールド株式会社</a></div>
-        <div>｜</div>
-        <div><a href="#tandemsprint">TandemSprint, Inc.</a></div>
+    <div class="pjt_spmenu sp_block">
+        <a href="#sales">
+            <div>
+                農業資材販売
+            </div>
+        </a>
+        <a href="#vinyl">
+            <div>
+                ハウス用ビニール加工
+            </div>
+        </a>
+        <a href="#agri">
+            <div>
+                青果生産
+            </div>
+        </a>
+    </div>
+    <div class="pjt_spmenu sp_block">
+        <a href="#flower">
+            <div>
+                花卉販売
+            </div>
+        </a>
+        <a href="#ec">
+            <div>
+                EC販売
+            </div>
+        </a>
+        <a href="#admin">
+            <div>
+                営業事務
+            </div>
+        </a>
     </div>
 </div>
-<!-- コンセプト -->
-<div id="concept-txt">
-    <div class="catch">
-        心を織り込み、進化を続ける
-    </div>
-    <div class="txt">
-        1965年に始まったレジャー・アミューズメント事業を皮切りに、フィットネス・リラクゼーション事業、外食事業、アグリ事業、海外進出支援事業など多角的に展開。昭和、平成、令和と3つの時代でゆたかさの基準や価値観が大きく変化する中、2021年に複合商業施設「ガーデンズ千早」、創業85周年を迎えた2022年には民間の公園として「ちはや公園」、久留米市中央公園内に「KURUMERU」がそれぞれ誕生し、自由なコミュニティ空間をもつ、オープンでインクルーシブな場が仲間入りしました。すべての世代の人たちへ、ちょうどよくて、心地いい、人と家族のコミュニケーションの場を広げていきます。
-    </div>
-</div>
-<!-- 高橋株式会社 不動産事業部 -->
-<div id="takahashi" class="corpbox">
-    <div class="headttl">
-        <div class="logo">
-            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_logo-1.png" alt="">
+
+<!-- 01農業資材販売 -->
+<div class="pjt_box" id="sales">
+    <div class="title_wrap">
+        <div class="bar_left sales_bg">
+            <div class="name">
+                <div class="jpn">農業資材販売</div>
+                <div class="eng">Agricultural Material Sales</div>
+            </div>
         </div>
+    </div>
+    <div class="catch_copy">
+        種苗から大型ビニールハウスまで<br>
+        なんでも揃う農業資材の総合商社
+    </div>
+    <div class="sales_box">
+        <div class="sales_txt">
+            <div class="name_jp">
+                提案型営業販売
+            </div>
+            <div class="name_en">
+                Proposal Selling
+            </div>
+            <div class="body_copy">
+                　アグリー・アーツは、農家の方々に必要な農業資材を提供しお届けする提案型営業販売を九州一円をエリアとして行っています。当社では、種子や肥料、農薬、農業機械、ビニールハウスの設置・施工まで、農家の方々が必要とするありとあらゆる農業資材を取り扱っています。それらを最適な形で提案差し上げ、農家の方々が少しでも良い品質・高収量になるようなサポートができるような提案を私たちは目指しています。<br>
+                　私たちは、農家の方々が高品質な農作物を生産できるように、最新の農業技術や研究結果、新商品や新しい栽培方法等の情報を提供することにも力を入れています。当社のスタッフは、農業に関する知識が豊富であり、お客様のニーズに合わせた最適な農業資材を提供するために尽力しています。また、私たちはお客様との信頼関係を大切にし、常にお客様の立場に立ったサービスを提供することを心がけています。私たちは、お客様のご要望に迅速かつ正確に対応することで、お客様の生産性向上に貢献することを目指しています。<br>
+                　そして、私たちは商品を販売するだけでなく、地域の皆さまのお役に立ち、皆さまに愛され必要とされるような存在になっていきたいと思っています。
+            </div>
+        </div>
+        <div class="sales_ph">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec1_01.jpg" alt="">
+        </div>
+    </div>
+    <div class="sales_photo">
+        <div class="sph_01">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec1_02.jpg" alt="">
+        </div>
+        <div class="sph_02">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec1_03.jpg" alt="">
+        </div>
+        <div class="sph_03">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec1_map.png" alt="">
+        </div>
+    </div>
+    <div class="store">
+        <div class="name_jp">
+            店舗販売
+        </div>
+        <div class="name_en">
+            Store Salling
+        </div>
+        <div class="inner">
+            <div class="main_vis">
+                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec1_04.jpg" alt="">
+            </div>
+            <div class="main_txt">
+                <div class="copy">
+                    　アグリ・アーツでは「みつのぶ農園」という店名にて農業資材の店舗販売を行っています。お店は天草市古川町と上天草市大矢野町にあり、創業当時より地元の皆さまにご愛顧頂いております。商品は種苗・肥料から各種農業資材や出荷のための梱包資材等を各種取り揃えてございます。店舗販売の特性上、お店がある近隣エリアの農家さんをはじめとするお客さまと顔を合わせ会話をしながら最適な商品をご案内しています。
+                </div>
+                <div class="ph">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec1_06.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="sub_ph">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec1_05.jpg" alt="">
+        </div>
+    </div>
+</div>
+<!-- 02ハウス用ビニール加工 -->
+<div class="pjt_box" id="vinyl">
+    <div class="title_wrap">
+        <div class="bar vinyl_bg">
+            <div class="name">
+                <div class="jpn">ハウス用ビニール加工</div>
+                <div class="eng">Vinyl Machining for Greenhouse</div>
+            </div>
+        </div>
+    </div>
+    <div class="catch_copy">
+        １つとして同じものがない<br>
+        ハウス用ビニールをつくる
+    </div>
+    <div class="vinyl_box">
+        <div class="vinyl_txt">
+            　農業用のビニールハウスは圃場の形や用途・仕様によって、１つ１つ素材も形状も異なり、すべてがオリジナルの仕様になります。新築のビニールハウスはもちろんのこと、張り替え用のビニールの加工も行なっています。POやポリ塩化ビニールの原反を裁断・継ぎ加工をして、ハウスに合わせた形に形成します。家庭用の小さめのものから、50メートルを超える大きなハウス用のものまで製造しています。
+        </div>
+        <div class="vinyl_ph">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec2_01.jpg" alt="">
+        </div>
+    </div>
+    <div class="vinyl_photo">
+        <div class="sph_01">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec2_02.jpg" alt="">
+            <div class="cap">
+                出来上がったビニールを張り替え現場で綺麗に開くことができるように折り畳むのは大変難しく、職人の技による部分が大きいと言えます。
+            </div>
+        </div>
+        <div class="sph_02">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec2_03.jpg" alt="">
+            <div class="cap">
+                ビニールは指定されたサイズに従って長さを測りながら形成します。横幅が大きいものについては横方向に継いで作ります。
+            </div>
+        </div>
+    </div>
+    <div class="slick_01">
+        <div class="top_slider_panel">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec2_sli01.jpg" alt="">
+        </div>
+
+        <div class="top_slider_panel mgn_top">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec2_sli02.jpg" alt="">
+        </div>
+
+        <div class="top_slider_panel">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec2_sli03.jpg" alt="">
+        </div>
+
+        <div class="top_slider_panel mgn_top">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec2_sli04.jpg" alt="">
+        </div>
+
+        <div class="top_slider_panel">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec2_sli05.jpg" alt="">
+        </div>
+
+        <div class="top_slider_panel mgn_top">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec2_sli06.jpg" alt="">
+        </div>
+
+        <div class="top_slider_panel">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec2_sli07.jpg" alt="">
+        </div>
+
+        <div class="top_slider_panel mgn_top">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec2_sli08.jpg" alt="">
+        </div>
+    </div>
+</div>
+<!-- 03青果生産 -->
+<div class="pjt_box" id="agri">
+    <div class="title_wrap">
+        <div class="bar_left agri_bg">
+            <div class="name">
+                <div class="jpn">青果生産</div>
+                <div class="eng">Agricultural Production</div>
+            </div>
+        </div>
+    </div>
+    <div class="catch_copy">
+        天草と空と海が育んだ<br>
+        土壌で作る野菜
+    </div>
+    <div class="agri_box">
+        <div class="inner">
+            <div class="txt">
+                　アグリ・アーツは熊本県天草市を本拠地としています。天草といえば高い空と青い海、そしてそこからもたらされる肥沃な大地。その天草の地でアグリ・アーツは青果生産を行なっています。主な生産品は各種野菜苗とミニトマトです。また近年はキクラゲの生産をはじめたり、有機米の生産にも取り組んでいます。
+            </div>
+            <div class="ph">
+                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec3_01.jpg" alt="">
+            </div>
+        </div>
+        <div class="ph_box mgn_b">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec3_02.jpg" alt="">
+            <div class="cap">
+                野菜苗は「じゃがいも」「さつまいも」「タマネギ」を中心に育てています。それらの苗はアグリ・アーツが持つチャネルにて販売しております。
+            </div>
+        </div>
+        <div class="ph_box mgn_b mgn_l">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec3_03.jpg" alt="">
+            <div class="cap">
+                御領小学校跡地に建てられた巨大なビニールハウス内にて、様々な色や種類のミニトマトを生産しています。
+            </div>
+        </div>
+        <div class="ph_box">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec3_04.jpg" alt="">
+            <div class="cap">
+                近年はキクラゲの生産に取り組んでおり、生産体制を整えています。
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 04花卉販売 -->
+<div class="pjt_box" id="flower">
+    <div class="title_wrap">
+        <div class="bar flower_bg">
+            <div class="name">
+                <div class="jpn">花卉販売</div>
+                <div class="eng">Flower Sales</div>
+            </div>
+        </div>
+    </div>
+    <div class="catch_copy">
+        花につつまれた<br>
+        空間を作る
+    </div>
+    <div class="flower_box">
         <div class="txt">
-            <div class="jp">
-                高橋株式会社 不動産事業部
+            <div class="body_copy">
+                　FLOWER TRAILでは生花・ドライフラワー・ブリーザーブドフラワー等のお花を用いて、花束・アレンジ・生花スタンド・冠婚葬祭等の各種催事用フラワーアレンジ等をご予算、ご希望に応じて承っております。<br>
+                花束やブーケ、各種アレンジや色々なお花を用いたアイテムを通じて、花や植物をもっと身近に感じ、日々の暮らしに取り入れていただけると幸いです。
             </div>
-            <div class="en">
-                Takahashi Co., Ltd. Realestate Division
+        </div>
+        <div class="ph">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec4_01.jpg" alt="">
+        </div>
+    </div>
+    <div class="flower_photo">
+        <div class="sph_01">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec4_02.jpg" alt="">
+        </div>
+        <div class="sph_02">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec4_03.jpg" alt="">
+        </div>
+    </div>
+    <div class="slick_01">
+        <div class="top_slider_panel">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec4_sli01.jpg" alt="">
+        </div>
+
+        <div class="top_slider_panel mgn_top">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec4_sli02.jpg" alt="">
+        </div>
+
+        <div class="top_slider_panel">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec4_sli03.jpg" alt="">
+        </div>
+
+        <div class="top_slider_panel mgn_top">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec4_sli04.jpg" alt="">
+        </div>
+
+        <div class="top_slider_panel">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec4_sli05.jpg" alt="">
+        </div>
+
+        <div class="top_slider_panel mgn_top">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec4_sli06.jpg" alt="">
+        </div>
+
+        <div class="top_slider_panel">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec4_sli07.jpg" alt="">
+        </div>
+
+        <div class="top_slider_panel mgn_top">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec4_sli08.jpg" alt="">
+        </div>
+    </div>
+</div>
+<!-- 05EC販売 -->
+<div class="pjt_box" id="ec">
+    <div class="title_wrap">
+        <div class="bar_left ec_bg">
+            <div class="name">
+                <div class="jpn">EC販売</div>
+                <div class="eng">E-Commerce</div>
             </div>
         </div>
     </div>
-    <div class="ttlcopy fade">
-        人と暮らしに寄り添い、<br class="sp_inline">街と共に地域を育てる。
+    <div class="catch_copy">
+        日本全国<br>
+        いつでもどこでも
     </div>
-    <div class="cntbox">
-        <div class="slider_wrap">
-            <div class="slick_03">
-                <div class="top_slider_panel">
-                    <div class="top_slider_ph">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_takahashi-1.jpg" alt="" class="ph_top">
-                    </div>
-                </div>
-                <div class="top_slider_panel">
-                    <div class="top_slider_ph">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_takahashi-2.jpg" alt="" class="ph_btm">
-                    </div>
-                </div>
-                <div class="top_slider_panel">
-                    <div class="top_slider_ph">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_takahashi-3.jpg" alt="" class="ph_top">
-                    </div>
-                </div>
-                <div class="top_slider_panel">
-                    <div class="top_slider_ph">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_takahashi-4.jpg" alt="" class="ph_top">
-                    </div>
-                </div>
+    <div class="ec_wrap">
+        <div class="txt_box">
+            <div class="copy">
+                　アグリ・アーツではインターネット販売も行なっています。24時間いつでもどこでも注文ができ、全国どこへでも配送が可能です。商品の主力は種苗となっており、当社で育てた苗も数多く出品しております。その他にも長年の経験と農協の最新情報を織り交ぜてセレクトした各種農業用品・資材も出品しております。
+            </div>
+            <div class="btn">
+                <a href="http://www.mitsunobu-nouen.com" target="_blank" rel=”noopener noreferrer”>
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec5_01.svg" alt="みつのぶ農園ECサイト http://www.mitsunobu-nouen.com">
+                </a>
             </div>
         </div>
-        <div class="copy">
-            <div class="txt fade">
-                半世紀以上の歴史の中、私たちは地域の人々とともに街の活性化に取り組んできました。長い時間をかけて街とともに歩き、街を育て、街の人たちの記憶を彩る。目指すのは街や人々の記憶を創り出すこと。​そこで生まれる笑顔と賑わいこそが、私たちの生きがいです。
-            </div>
-            <a href="https://www.tgfudosan.com/" target="_blank" rel="noopener noreferrer">
-                <div class="btn">
-                    不動産事業部 Webサイト →
-                </div>
+        <div class="ph_box pc_block">
+            <a href="http://www.mitsunobu-nouen.com" target="_blank" rel=”noopener noreferrer”>
+                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec5_02.jpg" alt="">
             </a>
         </div>
     </div>
 </div>
-<!-- スポガ -->
-<div id="sportsgarden" class="corpbox">
-    <div class="headttl">
-        <div class="logo">
-            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_logo-2.png" alt="">
+<!-- 06販売事務 -->
+<div class="pjt_box" id="admin">
+    <div class="title_wrap">
+        <div class="bar admin_bg">
+            <div class="name">
+                <div class="jpn">販売事務</div>
+                <div class="eng">Sales Administration</div>
+            </div>
         </div>
+    </div>
+    <div class="catch_copy">
+        欠かすことができない<br>
+        後方支援
+    </div>
+    <div class="admin_box">
         <div class="txt">
-            <div class="jp">
-                スポーツガーデン株式会社
-            </div>
-            <div class="en">
-                Sports Garden Co., Ltd.
-            </div>
+            　販売事務は農業資材販売・ハウス用ビニール加工・青果生産・花卉販売・EC販売のすべての管理をしています。随時データを集計し、それを的確に分析して、現場に正確なフィードバックを提供しています。その他にも顧客データの管理や営業プロセスの効率化、高度なセキュリティ対策によるデータの保護等の活動の基盤となる幅広い業務を担当しています。販売事務はすべての現場にとって欠かすことのできない後方支援です。
         </div>
-    </div>
-    <div class="ttlcopy fade">
-        忘れられない笑顔の体験を通じて、<br>
-        温もりある「家族コミュニケーション」を提供する。
-    </div>
-    <div class="cntbox">
-        <div class="slider_wrap">
-            <div class="slick_03">
-                <div class="top_slider_panel">
-                    <div class="top_slider_ph">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_spoga-1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="top_slider_panel">
-                    <div class="top_slider_ph">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_spoga-2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="top_slider_panel">
-                    <div class="top_slider_ph">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_spoga-3.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copy">
-            <div class="txt fade">
-                ボウリングやバッティング、アイススケート、アミューズメント施設を展開するスポーツガーデン。私たちがもっとも大切にしているのは、家族や大切な人同士が、いつでも、気軽に楽しめる“カジュアルスポーツ”を通して、記憶に残るような笑顔の体験をしていただくこと。そして体験を通じて、家族や大切な人とのコミュニケーションを深めていただくこと。家族の話題になるような楽しい時間とともに、私たちスポーツガーデンは、地域に「いつの時代も笑顔になれる場所」を提供していきます。
-            </div>
-            <a href="https://sportsgarden.co.jp/" target="_blank" rel="noopener noreferrer">
-                <div class="btn">
-                    スポーツガーデン Webサイト →
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-<!-- エスタ -->
-<div id="esta" class="corpbox">
-    <div class="headttl">
-        <div class="logo">
-            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_logo-3.png" alt="">
-        </div>
-        <div class="txt">
-            <div class="jp">
-                エスタ株式会社
-            </div>
-            <div class="en">
-                Esta Co., Ltd.
-            </div>
-        </div>
-    </div>
-    <div class="ttlcopy fade">
-        「健康エンターテイメント」で、<br>
-        地域に笑顔あふれる毎日を創りだす。
-    </div>
-    <div class="cntbox">
-        <div class="slider_wrap">
-            <div class="slick_03">
-                <div class="top_slider_panel">
-                    <div class="top_slider_ph">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_esta-1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="top_slider_panel">
-                    <div class="top_slider_ph">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_esta-2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="top_slider_panel">
-                    <div class="top_slider_ph">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_esta-3.jpg" alt="">
-                    </div>
-                </div>
-                <div class="top_slider_panel">
-                    <div class="top_slider_ph">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_esta-4.jpg" alt="">
-                    </div>
-                </div>
-                <div class="top_slider_panel">
-                    <div class="top_slider_ph">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_esta-5.jpg" alt="">
-                    </div>
-                </div>
-                <div class="top_slider_panel">
-                    <div class="top_slider_ph">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_esta-6.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copy">
-            <div class="txt fade">
-                フィットネスクラブ、テニス・スイミングスクール、ホットヨガスタジオ、ヒーリングサロンなどを展開するエスタ。施設や設備などハード面の充実だけでなく、お客さまが気軽にワクワクしながら健康になっていただけるよう、スタッフ一人ひとりの手で楽しさを演出していく。いわば「健康エンターテイメント」がエスタのコンセプト。健康なお客さまが増えていけば、地域に笑顔が増えていく。お客さまの毎日と地域を元気にしていくことが、私たちエスタの使命なのです。
-            </div>
-            <a href="https://www.sports-esta.com/" target="_blank" rel="noopener noreferrer">
-                <div class="btn">
-                    エスタ Webサイト →
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-<!-- ビーエルダイニング -->
-<div id="bldining" class="corpbox">
-    <div class="headttl">
-        <div class="logo">
-            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_logo-4.png" alt="">
-        </div>
-        <div class="txt">
-            <div class="jp">
-                ビーエルダイニング株式会社
-            </div>
-            <div class="en">
-                BL Dining Co.,Ltd.
-            </div>
-        </div>
-    </div>
-    <div class="ttlcopy fade">
-        まだない「ダイニングシーン」で、<br>
-        潤いあるひとときを演出する。
-    </div>
-    <div class="cntbox">
-        <div class="slider_wrap">
-            <div class="slick_03">
-                <div class="top_slider_panel">
-                    <div class="top_slider_ph">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_bld-1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="top_slider_panel">
-                    <div class="top_slider_ph">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_bld-2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="top_slider_panel">
-                    <div class="top_slider_ph">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_bld-4.jpg" alt="">
-                    </div>
-                </div>
-                <div class="top_slider_panel">
-                    <div class="top_slider_ph">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_bld-5.jpg" alt="">
-                    </div>
-                </div>
-                <div class="top_slider_panel">
-                    <div class="top_slider_ph">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_bld-6.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copy">
-            <div class="txt fade">
-                “プロント”など、カフェを展開するビーエルダイニング。私たちが、これまで高橋グループの歴史の中で築いてきたコンセプトは、「その街に新しいダイニングシーン」を創りだすこと。そして、心温まるおもてなしを通して、お客さまの日常の中に、潤いのあるひとときを演出していくこと。街に新たな風景を創りだし、お客さまの日常を豊かに変えていく。自社ブランドの開発や海外出店など、私たちビーエルダイニングの挑戦に終わりはありません。
-            </div>
-            <a href="https://www.bldining.com/" target="_blank" rel="noopener noreferrer">
-                <div class="btn">
-                    ビーエルダイニング Webサイト →
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-<!-- アークフィールド -->
-<div id="arcfield" class="corpbox">
-    <div class="headttl">
-        <div class="logo">
-            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_logo-5.png" alt="">
-        </div>
-        <div class="txt">
-            <div class="jp">
-                アークフィールド株式会社
-            </div>
-            <div class="en">
-                Arcfield Inc.
-            </div>
-        </div>
-    </div>
-    <div class="ttlcopy fade">
-        日本の食と農業を未来につなぐため、<br>
-        「ファームtoテーブル」 にチャレンジする。
-    </div>
-    <div class="cntbox">
-        <div class="slider_wrap">
-            <div class="slick_03">
-                <div class="top_slider_panel">
-                    <div class="top_slider_ph">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_af-1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="top_slider_panel">
-                    <div class="top_slider_ph">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_af-2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="top_slider_panel">
-                    <div class="top_slider_ph">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_af-3.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copy">
-            <div class="txt fade">
-                日本の食と農業を未来に繋げたいという想いから生まれた「アークフィールド株式会社」。農業従事者の高齢化、耕作放棄地の増加など、現在の日本の農業の課題を解決すべく、自由な発想と無限のチャレンジ精神で農業の可能性を広げていくことを目指しています。現在、九州の複数の地域でアスパラガス・棚田米・ニラなどの生産に取り組み、様々なスタイルで農産物を市場に提供。農業の新たな価値を創造しつつ、日々の食卓をもっと笑顔にする。それが私たちの願いです。
-            </div>
-            <a href="https://arc-field.com/" target="_blank" rel="noopener noreferrer">
-                <div class="btn">
-                    アークフィールド Webサイト →
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-<!-- タンデムスプリント -->
-<div id="tandemsprint" class="corpbox">
-    <div class="headttl">
-        <div class="logo">
-            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_logo-6.png" alt="">
-        </div>
-        <div class="txt">
-            <div class="jp">
-                タンデムスプリントInc.
-            </div>
-            <div class="en">
-                TandemSprint Inc.
-            </div>
-        </div>
-    </div>
-    <div class="ttlcopy fade">
-        国際ビジネスのパートナーとして<br>
-        「世界進出をサポート」する。
-    </div>
-    <div class="cntbox">
-        <div class="slider_wrap">
-            <div class="slick_03">
-                <div class="top_slider_panel">
-                    <div class="top_slider_ph">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_ts-1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="top_slider_panel">
-                    <div class="top_slider_ph">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_ts-2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="top_slider_panel">
-                    <div class="top_slider_ph">
-                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_ts-3.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copy">
-            <div class="txt fade">
-                北米市場を中心とした海外進出支援事業と、サンフランシスコで不動産事業を行う「タンデムスプリント」。“日本の素晴らしい商品やサービスを、世界中の人々に届け、より豊かな社会を実現したい”という想いをコンセプトに、現地との強固なネットワークを強みとしています。日本企業の商品・サービスが海外市場に喜んで受け入れられる価値を明確にし、仕組みを構築することで、日本企業が世界市場に進出できるようサポートします。
-            </div>
-            <a href="https://tandemsprint.com/" target="_blank" rel="noopener noreferrer">
-                <div class="btn">
-                    タンデムスプリント Webサイト →
-                </div>
-            </a>
+        <div class="ph">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec6_01.jpg" alt="">
         </div>
     </div>
 </div>
 <script type="text/javascript" src="<?= esc_url(get_template_directory_uri()); ?>/asset/js/slick.min.js"></script>
 <script type="text/javascript">
     $(function() {
-        $('.slick_03').slick({
+        $('.slick_01').slick({
             infinite: true, // 無限ループ
             autoplay: true, //オートプレイ
-            slidesToShow: 1,
+            slidesToShow: 4,
             slidesToScroll: 1,
-            autoplaySpeed: 3500, //オートプレイの切り替わり時間
-            speed: 1500,
+            autoplaySpeed: 0, //オートプレイの切り替わり時間
+            speed: 20000,
             accessibility: false,
             arrows: false,
             draggable: false,
             pauseOnHover: false,
-            dots: true,
-            fade: true,
+            dots: false,
+            fade: false,
             cssEase: 'linear',
+            responsive: [{
+                breakpoint: 800, // 799px以下のサイズに適用
+                settings: {
+                    slidesToShow: 2,
+                },
+            }, ],
         });
     });
 </script>
+
 
 <?php get_footer(); ?>
