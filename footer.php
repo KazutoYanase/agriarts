@@ -12,17 +12,17 @@
 		<div class="contact">
 			<div class="inner">
 				<div class="copy">
-					<img src="./asset/img/foot__contact.svg" alt="CONTACT US お問い合わせ ご質問やご相談などお気軽にお問い合わせください。">
+					<img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/foot__contact.svg" alt="CONTACT US お問い合わせ ご質問やご相談などお気軽にお問い合わせください。">
 				</div>
 				<div class="btn fade">
-					<img src="./asset/img/foot__tel.svg" alt="tel. 0969-22-5184">
+					<img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/foot__tel.svg" alt="tel. 0969-22-5184">
 				</div>
 			</div>
 		</div>
 		<div class="footer_menu">
 			<div class="wrap">
 				<div class="logo">
-					<img src="./asset/img/logo.png" alt="AGRIARTS">
+					<img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/logo.png" alt="AGRIARTS">
 				</div>
 				<div class="m__1">
 					<div class="title"><a href="#">会社概要</a></div>

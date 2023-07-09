@@ -74,7 +74,7 @@
 	<nav id="pc_nav" class="pc_block">
 		<div id="pc_nav_wrap">
 			<div id="pc_nav_inner">
-				<h1 id="pc_nav_logo"><a href="index.html"><img alt="株式会社アグリアーツ" src="./asset/img/logo.png"></a></h1>
+				<h1 id="pc_nav_logo"><a href="index.html"><img alt="株式会社アグリアーツ" src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/logo.png"></a></h1>
 				<div class="pcmenubtn_1"><a href="index.html">HOME</a></div>
 				<div class="pcmenubtn_1"><a href="overview.html">会社概要</a></div>
 				<div class="pcmenubtn_1"><a href="projects.html">事業案内</a></div>
@@ -88,7 +88,7 @@
 	<nav id="sp_menu" class="sp_block">
 		<div class="fullscreenmenu">
 			<div id="humnav">
-				<h1 class="spmenubtn_0"><a href="index.html"><img alt="AGRIARTS" src="./asset/img/logo.png"></a></h1>
+				<h1 class="spmenubtn_0"><a href="index.html"><img alt="AGRIARTS" src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/logo.png"></a></h1>
 				<div class="spmenubtn_1"><a href="overview.html">会社概要</a></div>
 				<div class="spmenubtn_1"><a href="projects.html">事業案内</a></div>
 				<div class="spmenubtn_1"><a href="news-archive.html">ニュース</a></div>

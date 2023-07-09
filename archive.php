@@ -2,7 +2,7 @@
 /**
  * The template for displaying archive pages.
  *
- * @package TAKAHASHI GROUP
+ * @package AGRI ATRS
  */
 
 get_header(); ?>

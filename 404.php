@@ -2,7 +2,7 @@
 /**
  * 404 page content
  *
- * @package TAKAHASHI GROUP
+ * @package AGRI ATRS
  */
 get_header(); ?>
 

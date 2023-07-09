@@ -8,387 +8,518 @@
  * E.g., it puts together the home page when no home.php file exists.
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package TAKAHASHI GROUP
+ * @package AGRI ATRS
  */
 
 get_header(); ?>
 
-<!-- メインビジュアル -->
-<div class="sp_block logo__sp">
-    <a href="<?= esc_url(home_url()); ?>"><img alt="TAKAHASHI GROUP" src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/menu_logo.svg"></a>
-</div>
-<div class="outer">
-    <div class="mv_wrap">
-        <div class="mv_txt">
-            ひとに、まちに、ここちよく
-        </div>
-        <div class="mv_img">
-            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/topimg_pc.jpg" alt="" class="pc_inline">
-            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/topimg_sp.jpg" alt="" class="sp_inline">
-        </div>
-    </div>
-    <div class="mv_scroll pc_block">
-        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_scroll.png" alt="SCROLL">
-    </div>
-</div>
-<!-- スライダー -->
-<div id="top_slider_wrap">
-    <div class="slick_01">
-        <a href="<?= esc_url(home_url('/projects/')); ?>#takahashi">
-            <div class="top_slider_panel">
-                <div class="top_slider_ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_takahashi-1.jpg" alt=""></div>
-                <div class="top_msg">
-                    高橋株式会社
-                </div>
-            </div>
-        </a>
-        <a href="<?= esc_url(home_url('/projects/')); ?>#sportsgarden">
-            <div class="top_slider_panel">
-                <div class="top_slider_ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_spoga-1.jpg" alt=""></div>
-                <div class="top_msg">
-                    スポーツガーデン株式会社
-                </div>
-            </div>
-        </a>
-        <a href="<?= esc_url(home_url('/projects/')); ?>#esta">
-            <div class="top_slider_panel">
-                <div class="top_slider_ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_esta-1.jpg" alt=""></div>
-                <div class="top_msg">
-                    エスタ株式会社
-                </div>
-            </div>
-        </a>
-        <a href="<?= esc_url(home_url('/projects/')); ?>#bldining">
-            <div class="top_slider_panel">
-                <div class="top_slider_ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_bld-1.jpg" alt=""></div>
-                <div class="top_msg">
-                    ビーエルダイニング株式会社
-                </div>
-            </div>
-        </a>
-        <a href="<?= esc_url(home_url('/projects/')); ?>#arcfield">
-            <div class="top_slider_panel">
-                <div class="top_slider_ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_af-1.jpg" alt=""></div>
-                <div class="top_msg">
-                    アークフィールド株式会社
-                </div>
-            </div>
-        </a>
-        <a href="<?= esc_url(home_url('/projects/')); ?>#tandemsprint">
-            <div class="top_slider_panel">
-                <div class="top_slider_ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_ts-1.jpg" alt=""></div>
-                <div class="top_msg">
-                    タンデムスプリントInc.
-                </div>
-            </div>
-        </a>
-    </div>
-</div>
-<!-- ニュース -->
-<div class="top_news">
-    <h2 class="title">
-        <div class="top">ニュース</div>
-        <div class="btm">News</div>
-    </h2>
-    <div class="inner">
 
-        <?php 
-            $args = array(
-                'post_type' => 'news',
-                'posts_per_page' => '3'
-                );
-            $the_query = new WP_query($args);
-            if ($the_query->have_posts()):
-        ?>
-
-        <?php while($the_query->have_posts()): $the_query->the_post(); 
-            $terms = get_the_terms($post->ID, 'news_kind');
-            foreach ( $terms as $term) :
-                $this_term = $term->name;
-                $this_term_slug = $term->slug;
-            endforeach;
-
-            $terms = get_the_terms($post->ID, 'news_pjt');
-            foreach ( $terms as $term) :
-                $this_pjt = $term->name;
-                $this_pjt_slug = $term->slug;
-            endforeach;
-
-            $this_post_id = $post->ID;
-        ?>
-
-        <div class="report">
-            <div class="kinds_<?php echo $this_term_slug; ?>"><?= esc_html($this_term); ?></div>
-            <div class="wrapper fade">
-                <div class="date"><?= esc_html(get_post_time("Y.m.d")); ?></div>
-                <div class="project"><?= esc_html($this_pjt); ?></div>
+        <!-- スライダー -->
+        <div id="top_slider_wrap">
+            <div class="slick_01">
+                <div class="top_slider_pnl">
+                    <div class="top_slider_ph pc_inline">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__slider01.jpg" alt="">
+                    </div>
+                    <div class="top_slider_ph sp_inline">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__slide_sp01.jpg" alt="">
+                    </div>
+                </div>
+        
+                <div class="top_slider_pnl">
+                    <div class="top_slider_ph pc_inline">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__slider02.jpg" alt="">
+                    </div>
+                    <div class="top_slider_ph sp_inline">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__slide_sp02.jpg" alt="">
+                    </div>
+                </div>
+        
+                <div class="top_slider_pnl">
+                    <div class="top_slider_ph pc_inline">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__slider03.jpg" alt="">
+                    </div>
+                    <div class="top_slider_ph sp_inline">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__slide_sp03.jpg" alt="">
+                    </div>
+                </div>
+        
+                <div class="top_slider_pnl">
+                    <div class="top_slider_ph pc_inline">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__slider04.jpg" alt="">
+                    </div>
+                    <div class="top_slider_ph sp_inline">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__slide_sp04.jpg" alt="">
+                    </div>
+                </div>
+        
+                <div class="top_slider_pnl">
+                    <div class="top_slider_ph pc_inline">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__slider05.jpg" alt="">
+                    </div>
+                    <div class="top_slider_ph sp_inline">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__slide_sp05.jpg" alt="">
+                    </div>
+                </div>
+        
+                <div class="top_slider_pnl">
+                    <div class="top_slider_ph pc_inline">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__slider06.jpg" alt="">
+                    </div>
+                    <div class="top_slider_ph sp_inline">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__slide_sp06.jpg" alt="">
+                    </div>
+                </div>
+        
+                <div class="top_slider_pnl">
+                    <div class="top_slider_ph pc_inline">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__slider07.jpg" alt="">
+                    </div>
+                    <div class="top_slider_ph sp_inline">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__slide_sp07.jpg" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="ttl">
-                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+        
+            <h2 class="top_msg pc_block">
+                <div class="box">農業の明るい未来を</div>
+                <div class="box">創造する</div>
+            </h2>
+            <div class="top_logo_smf sp_block">
+                <img alt="株式会社アグリアーツ" src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/logo.png">
             </div>
         </div>
-
-        <?php endwhile; ?>
-
-        <?php wp_reset_postdata(); endif; ?>
-
-
-
-        <div class="toarchive">
-            <a href="<?= esc_url(home_url('/news/')); ?>">ニュース一覧へ →</a>
+        <!-- メッセージ -->
+        <div class="top__message">
+            <div class="main_txt">
+                創業117年アグリ・アーツ（光延農園）は<br>
+                農業の総合会社として<br>
+                農に携わるあらゆる方々と共に<br>
+                農業発展のお手伝いをしてきました。<br>
+                <br>
+                「日本の食を支える農業の新しい未来を<br class="sp_inline">共に創り上げていく」<br>
+                <br>
+                「地球温暖化」「生物多様性」「地方創生」等<br>
+                国内外の抱えるさまざまな問題を<br>
+                自然・地域・農家さんに寄り添い<br>
+                持続可能な社会を目指して<br>
+                その営み中で解決していく。<br>
+                そんな、お客様に信頼されるパートナーを<br class="sp_inline">目指してまいります。
+            </div>
+            <div class="img__1 fade_left">
+                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__msg01.jpg" alt="">
+            </div>
+            <div class="img__2 fade_right">
+                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__msg02.jpg" alt="">
+            </div>
+            <div class="img__3 fade_left">
+                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__msg03.jpg" alt="">
+            </div>
+            <div class="img__4 fade">
+                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__msg04.svg" alt="">
+            </div>
         </div>
-        <div class="banner">
-            <div class="tanoshika fade">
-                <a href="https://tkgroup.co.jp/tanoshika/" target="_blank" rel="noopener noreferrer">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_banner-1.jpg" alt="高橋グループのニュースサイト タノシカ！">
+        
+        <!-- 会社概要 -->
+        <div class="top_overview">
+            <h2 class="title">
+                <div class="top">会社概要</div>
+                <div class="btm">Overview</div>
+            </h2>
+            <div class="inner">
+                <div class="ph">
+                    <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__over01.jpg" alt="">
+                </div>
+                <div class="copy">
+                    <div class="ttl fade">
+                        農業の明るい未来を創造する
+                    </div>
+                    <div class="txt fade">
+                        昭和２年の創業以来、天草を基盤として農業の発展のお手伝いをしてきたアグリ・アーツは「農業の明るい未来を創造する」をテーマに、よりお客様に信頼されるパートナーを目指していまいります。
+                    </div>
+                    <a href="#">
+                        <div class="btn">
+                            more →
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="wrap">
+                <a href="#">
+                    <div class="maru fade">
+                        <div>企業理念</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="maru fade">
+                        <div>社長挨拶</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="maru fade">
+                        <div>会社概要</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="maru fade">
+                        <div>沿革</div>
+                    </div>
                 </a>
             </div>
-            <div class="chiiki fade">
-                <a href="<?= esc_url(home_url('/contribution/')); ?>">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_banner-2.jpg" alt="高橋の地域連携">
-                </a>
-            </div>
         </div>
-    </div>
-</div>
-<!-- 会社概要 -->
-<div class="top_overview">
-    <h2 class="title">
-        <div class="top">会社概要</div>
-        <div class="btm">Overview</div>
-    </h2>
-    <div class="inner">
-        <div class="ph">
-            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/pjt_takahashi-1.jpg" alt="">
-        </div>
-        <div class="copy">
-            <div class="ttl fade">
-                ひとに、まちに、ここちよく
-            </div>
-            <div class="txt fade">
-                創業以来85年をこえて、さまざまな事業を展開してきた私たちは、今こそ「ひとに、まちに、ここちよく」をキーワードに、さらなる挑戦を続けていきます。
-            </div>
-            <a href="<?= esc_url(home_url('/overview/')); ?>">
-                <div class="btn">
-                    more →
-                </div>
-            </a>
-        </div>
-    </div>
-    <div class="wrap">
-        <a href="<?= esc_url(home_url('/overview/')); ?>#philosophy">
-            <div class="maru fade">
-                <div>企業理念</div>
-            </div>
-        </a>
-        <a href="<?= esc_url(home_url('/overview/')); ?>#message">
-            <div class="maru fade">
-                <div>代表挨拶</div>
-            </div>
-        </a>
-        <a href="<?= esc_url(home_url('/overview/')); ?>#history">
-            <div class="maru fade">
-                <div>沿革</div>
-            </div>
-        </a>
-        <a href="<?= esc_url(home_url('/overview/')); ?>#profile">
-            <div class="maru fade">
-                <div>企業概要</div>
-            </div>
-        </a>
-        <a href="<?= esc_url(home_url('/overview/')); ?>#organization">
-            <div class="maru fade">
-                <div>組織図</div>
-            </div>
-        </a>
-        <a href="<?= esc_url(home_url('/overview/')); ?>#access">
-            <div class="maru fade">
-                <div>アクセス</div>
-            </div>
-        </a>
-    </div>
-</div>
-<!-- 事業案内 -->
-<div class="top_projects">
-    <h2 class="title">
-        <div class="top">事業案内</div>
-        <div class="btm">Projects</div>
-    </h2>
-    <div class="inner">
-        <div class="ph">
-            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_project.jpg" alt=""><br>
-            1960年代 織物工場の様子
-        </div>
-        <div class="copy">
-            <div class="ttl fade">
-                心を織り込み、進化を続ける
-            </div>
-            <div class="txt fade">
-                1937（昭和12）年に繊維業として創業。お客様第一に信頼と品質を重視した「製品に心を織り込む」を社是に掲げ、時代の変遷とともに展開する事業では「創意」の意志のもと、お客様、働くスタッフ、社会という三方よしの“場づくり”を続けています。
-            </div>
-            <a href="<?= esc_url(home_url('/projects/')); ?>">
-                <div class="btn">
-                    more →
-                </div>
-            </a>
-        </div>
-    </div>
-    <div class="wrap">
-        <a href="https://www.tgfudosan.com/" target="_blank" rel="noopener noreferrer">
-            <div class="logo fade">
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_project-01.jpg" alt="不動産事業部">
-            </div>
-        </a>
-        <a href="https://sportsgarden.co.jp/" target="_blank" rel="noopener noreferrer">
-            <div class="logo fade">
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_project-02.jpg" alt="スポーツガーデン株式会社">
-            </div>
-        </a>
-        <a href="https://www.sports-esta.com/" target="_blank" rel="noopener noreferrer">
-            <div class="logo fade">
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_project-03.jpg" alt="エスタ株式会社">
-            </div>
-        </a>
-        <a href="https://www.bldining.com/" target="_blank" rel="noopener noreferrer">
-            <div class="logo fade">
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_project-04.jpg" alt="ビーエルダイニング株式会社">
-            </div>
-        </a>
-        <a href="https://arc-field.com/" target="_blank" rel="noopener noreferrer">
-            <div class="logo fade">
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_project-05.jpg" alt="アークフィールド株式会社">
-            </div>
-        </a>
-        <a href="https://tandemsprint.com/" target="_blank" rel="noopener noreferrer">
-            <div class="logo fade">
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_project-06.jpg" alt="タンデムスプリント Inc.">
-            </div>
-        </a>
-        <a href="https://gardenschihaya.com/" target="_blank" rel="noopener noreferrer">
-            <div class="logo fade">
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_project-07.jpg" alt="ガーデンズ千早">
-            </div>
-        </a>
-        <a href="https://www.kurumeru.jp/" target="_blank" rel="noopener noreferrer">
-            <div class="logo fade">
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_project-08.jpg" alt="KURUMERU">
-            </div>
-        </a>
-    </div>
-</div>
-<!-- マップ -->
-<div class="top_map">
-    <div class="copy">
-        <div class="ttl">
-            TAKAHASHI MAP
-        </div>
-        <div class="txt fade">
-            高橋グループは本社をかまえる福岡県を中心として、<br>
-            日本各地に拠点を持ち、<br class="sp_inline">さまざまな事業にチャレンジしています。
-        </div>
-    </div>
-    <div class="mapph fade">
-        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_map.png" alt="" class="pc_inline">
-        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_map__sp.png" alt="" class="sp_inline">
-    </div>
-    <div class="wrap">
-        <div class="left">
+        
+        <!-- ニュース -->
+        <div class="top_news">
+            <h2 class="title">
+                <div class="top">ニュース</div>
+                <div class="btm">News</div>
+            </h2>
             <div class="inner">
-                <div class="logo fade">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_project-00.jpg" alt="">
+                <div class="report">
+                    <div class="wrapper fade">
+                        <div class="date">2023年12月12日</div>
+                    </div>
+                    <div class="ttl fade">
+                        <a href="#">
+                            令和５年度 社員旅行にて沖縄へ行って参りました。
+                        </a>
+                    </div>
                 </div>
-                <div class="txt fade">
-                    高橋株式会社<br>
-                    アゼリアガーデン諏訪野<br>
-                    サンシティ宗像<br>
-                    <a href="https://gardenschihaya.com/" target="_blank" rel="noopener noreferrer">ガーデンズ千早　<img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_map_icon.png" alt=""></a><br>
-                    <a href="https://chihayapark.com/" target="_blank" rel="noopener noreferrer">ちはや公園　<img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_map_icon.png" alt=""></a> <br>
-                    <a href="https://www.kurumeru.jp/" target="_blank" rel="noopener noreferrer">KURUMERU　<img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_map_icon.png" alt=""></a>
+                <div class="report">
+                    <div class="wrapper fade">
+                        <div class="date">2023年12月12日</div>
+                    </div>
+                    <div class="ttl fade">
+                        <a href="#">
+                            弊社にて開発・製造を行なっている新商品「●●●●●●」を発売いたします。
+                        </a>
+                    </div>
                 </div>
+                <div class="report">
+                    <div class="wrapper fade">
+                        <div class="date">2023年12月12日</div>
+                    </div>
+                    <div class="ttl fade">
+                        <a href="#">
+                            夏季休業のお知らせ
+                        </a>
+                    </div>
+                </div>
+        
+        
+                <div class="toarchive">
+                    <a href="#">ニュース一覧へ →</a>
+                </div>
+        
             </div>
+        </div>
+        
+        <!-- 事業案内 -->
+        <div class="top_projects">
+            <h2 class="title">
+                <div class="top">事業案内</div>
+                <div class="btm">Projects</div>
+            </h2>
             <div class="inner">
-                <div class="logo fade">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_project-02.jpg" alt="">
+                <div class="wrapper w_mgn_btm">
+                    <div class="mainvis fade">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__pjt01.jpg" alt="">
+                    </div>
+                    <a href="#">
+                        <div class="panel p_right">
+                            <div class="lead">
+                                01 - Agricultural Material Sales
+                            </div>
+                            <div class="num">
+                                事業案内①
+                            </div>
+                            <div class="tit">
+                                農業資材販売
+                            </div>
+                            <div class="txt">
+                                営業・店舗・ECの各チャネルを通して、種苗・肥料から農機具やビニールハウスの建設までありとあらゆる農業資材を販売しています。
+                            </div>
+                            <div class="btn">
+                                View More →
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="is_btn_l fade_right">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__pjt01_is.png" alt="">
+                        </div>
+                    </a>
                 </div>
-                <div class="txt fade">
-                    <a href="https://spogakurume.com/" target="_blank" rel="noopener noreferrer">スポガ久留米<br class="sp_inline"><span>（ボウリング・バッティング・アイススケート）</span><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_map_icon.png" alt=""></a><br>
-                    <a href="https://ohashicitybowl.com/" target="_blank" rel="noopener noreferrer">大橋シティボウル　<img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_map_icon.png" alt=""></a><br>
-                    <a href="https://munakatacitybowl.com/" target="_blank" rel="noopener noreferrer">宗像シティボウル<br class="sp_inline"><span>（ボウリング・バッティング）</span><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_map_icon.png" alt=""></a><br>
+                <div class="wrapper w_mgn_btm">
+                    <div class="mainvis fade">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__pjt02.jpg" alt="">
+                    </div>
+                    <a href="#">
+                        <div class="panel p_left">
+                            <div class="lead">
+                                02 - Vinyl Machining for Greenhouse
+                            </div>
+                            <div class="num">
+                                事業案内②
+                            </div>
+                            <div class="tit">
+                                ハウス用ビニール加工
+                            </div>
+                            <div class="txt">
+                                農業用ビニールハウスのビニールを加工しています。１つ１つ異なる形・大きさのビニールハウスに合わせて新築用・張り替え用のビニールを作ります。
+                            </div>
+                            <div class="btn">
+                                View More →
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="is_btn_r fade_right">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__pjt02_is.png" alt="">
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <div class="inner">
-                <div class="logo fade">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_project-03.jpg" alt="">
+                <div class="wrapper w_mgn_btm">
+                    <div class="mainvis fade">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__pjt03.jpg" alt="">
+                    </div>
+                    <a href="#">
+                        <div class="panel p_right">
+                            <div class="lead">
+                                03 - Agricultural Production
+                            </div>
+                            <div class="num">
+                                事業案内③
+                            </div>
+                            <div class="tit">
+                                青果生産
+                            </div>
+                            <div class="txt">
+                                各種苗類・ミニトマト・キクラゲ等の青果を生産しています。天草の空と海に育まれた土壌によって、とても美味しい青果を育てています。
+                            </div>
+                            <div class="btn">
+                                View More →
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="is_btn_l fade_right">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__pjt03_is.png" alt="">
+                        </div>
+                    </a>
                 </div>
-                <div class="txt fade">
-                    <a href="https://www.sports-esta.com/suwano/" target="_blank" rel="noopener noreferrer">スポーツクラブエスタ諏訪野　<img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_map_icon.png" alt=""></a><br>
-                    <a href="https://www.sports-esta.com/johnan/" target="_blank" rel="noopener noreferrer">スポーツクラブエスタクロス城南　<img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_map_icon.png" alt=""></a><br>
-                    <a href="https://www.sports-esta.com/moji/" target="_blank" rel="noopener noreferrer">スポーツクラブエスタ門司　<img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_map_icon.png" alt=""></a><br>
-                    <a href="https://www.sports-esta.com/chihaya/" target="_blank" rel="noopener noreferrer">スポーツクラブエスタクオリア千早　<img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_map_icon.png" alt=""></a><br>
-                    <a href="https://www.ib-luonto.com/" target="_blank" rel="noopener noreferrer">LUONTO久留米　<img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_map_icon.png" alt=""></a>
+                <div class="wrapper w_mgn_btm">
+                    <div class="mainvis fade">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__pjt04.jpg" alt="">
+                    </div>
+                    <a href="#">
+                        <div class="panel p_left">
+                            <div class="lead">
+                                04 - Flower Sales
+                            </div>
+                            <div class="num">
+                                事業案内④
+                            </div>
+                            <div class="tit">
+                                花卉販売
+                            </div>
+                            <div class="txt">
+                                生花やドライフラワーを使った花束や各種フラワーアレンジメントから結婚式等の大きなイベントの装飾まで承っております。
+                            </div>
+                            <div class="btn">
+                                View More →
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="is_btn_r fade_right">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__pjt04_is.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="wrapper w_mgn_btm">
+                    <div class="mainvis fade">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__pjt05.jpg" alt="">
+                    </div>
+                    <a href="#">
+                        <div class="panel p_right">
+                            <div class="lead">
+                                05 - E-Commerce
+                            </div>
+                            <div class="num">
+                                事業案内⑤
+                            </div>
+                            <div class="tit">
+                                EC販売
+                            </div>
+                            <div class="txt">
+                                EC販売でいつでもどこでも日本全国にアグリ・アーツの商品をお届けしています。
+                            </div>
+                            <div class="btn">
+                                View More →
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="wrapper">
+                    <div class="mainvis fade">
+                        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__pjt06.jpg" alt="">
+                    </div>
+                    <a href="#">
+                        <div class="panel p_left">
+                            <div class="lead">
+                                06 - Sales Administration
+                            </div>
+                            <div class="num">
+                                事業案内⑥
+                            </div>
+                            <div class="tit">
+                                販売事務
+                            </div>
+                            <div class="txt">
+                                販売事務は、すべての現場にとって欠かすことのできない後方支援です。
+                            </div>
+                            <div class="btn">
+                                View More →
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="right">
+        <!-- 採用 -->
+        <div class="top_recruit">
+            <h2 class="title">
+                <div class="top">採用情報</div>
+                <div class="btm">Recruit</div>
+            </h2>
             <div class="inner">
-                <div class="logo fade">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_project-04.jpg" alt="">
+                <div class="copy">
+                    農業の未来を創るために<br>
+                    天草で働きませんか
                 </div>
-                <div class="txt fade">
-                    <a href="https://www.pronto.co.jp/shop/detail?shopid=PR00008011" target="_blank" rel="noopener noreferrer">プロント長崎浜町　<img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_map_icon.png" alt=""></a><br>
-                    <a href="https://www.pronto.co.jp/shop/detail?shopid=0339106015" target="_blank" rel="noopener noreferrer">プロント大塚　<img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_map_icon.png" alt=""></a><br>
-                    <a href="https://www.pronto.co.jp/shop/detail?shopid=PR00000264" target="_blank" rel="noopener noreferrer">プロント渋谷東武ホテル　<img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_map_icon.png" alt=""></a><br>
-                    プロント日比谷<br>
-                    <a href="https://www.pronto.co.jp/shop/detail?shopid=0X00252498" target="_blank" rel="noopener noreferrer"> - ライブラリーダイニング　<img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_map_icon.png" alt=""></a><br>
-                    <a href="https://www.pronto.co.jp/shop/detail?shopid=S000004660" target="_blank" rel="noopener noreferrer"> - ライブラリーショップ&カフェ　<img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_map_icon.png" alt=""></a>
+                <div class="txt">
+                    アグリ・アーツでは<br class="sp_inline">一緒に働く仲間を募集しています。<br>
+                    私たちは、農業の未来を担う人たちと一緒に働き、<br class="sp_inline">地域の農業を支えることを目指しています。<br>
+                    社員のアイデアや意見に耳を傾け、<br class="sp_inline">誰もが意見を出すことのできる組織でありたい。<br>
+                    そんな職場環境づくりを目指しています。
                 </div>
-            </div>
-            <div class="inner">
-                <div class="logo fade">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_project-05.jpg" alt="">
+                <div class="btn_wrap">
+                    <a href="#">
+                        <div class="img fade_left">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__01_a.jpg" alt="">
+                        </div>
+                        <div class="pos">
+                            フィールドアドバイザー<br>
+                            <span>Field Advisor</span>
+                        </div>
+                    </a>
                 </div>
-                <div class="txt fade">
-                    棚田米水田<span>（福岡県うきは市）</span><br>
-                    アスパラ農場<span>（福岡県三潴郡大木町）</span><br>
-                    ニラ農場<span>（熊本県山鹿市）</span>
+                <div class="btn_wrap mgn_left">
+                    <a href="#">
+                        <div class="img fade_right">
+                            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__02_a.jpg" alt="">
+                        </div>
+                        <div class="pos">
+                            ハウス用ビニール加工<br>
+                            <span>Fruits and Vegetables Production</span>
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <div class="inner">
-                <div class="logo fade">
-                    <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_project-06.jpg" alt="">
-                </div>
-                <div class="txt fade">
-                    <a href="https://tandemsprint.com/" target="_blank" rel="noopener noreferrer">タンデムスプリント　<img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/top_map_icon.png" alt=""></a>
+                <div class="btn_flex">
+                    <div class="box">
+                        <a href="#">
+                            <div class="img fade">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__03_a.jpg" alt="">
+                            </div>
+                            <div class="pos">
+                                青果生産<br>
+                                <span>Vegetables Production</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box mgn_top">
+                        <a href="#">
+                            <div class="img fade">
+                                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__04_a.jpg" alt="">
+                            </div>
+                            <div class="pos">
+                                花卉販売<br>
+                                <span>Flower Sales</span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<script type="text/javascript" src="<?= esc_url(get_template_directory_uri()); ?>/asset/js/slick.min.js"></script>
-<script type="text/javascript">
-    $(function() {
-        $('.slick_01').slick({
-            infinite: true, // 無限ループ
-            autoplay: true, //オートプレイ
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            autoplaySpeed: 0, //オートプレイの切り替わり時間
-            speed: 20000,
-            accessibility: false,
-            arrows: false,
-            draggable: false,
-            pauseOnHover: false,
-            dots: false,
-            fade: false,
-            cssEase: 'linear',
-            responsive: [{
-                breakpoint: 800, // 799px以下のサイズに適用
-                settings: {
-                    slidesToShow: 2,
-                },
-            }, ],
-        });
-    });
-</script>
+        <!-- アクセス -->
+        <div class="top_access">
+            <h2 class="title">
+                <div class="top">アクセス</div>
+                <div class="btm">Access</div>
+            </h2>
+            <div class="map_outer">
+                <div class="box fade">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3366.709953058068!2d130.1834380769171!3d32.45369757380028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353fef001cc0b7b9%3A0x61b040d1c9124547!2z44CSODYzLTAwMjUg54aK5pys55yM5aSp6I2J5biC5Y-k5bed55S677yR77yR4oiS77yX!5e0!3m2!1sja!2sjp!4v1686553659249!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="txt">
+                        <div class="name">
+                            本社・フラワートレイル
+                        </div>
+                        熊本県天草市古川町１１番７号
+                        <a href="#">
+                            <div class="btn">
+                                View More →
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="box fade">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.7065462254527!2d130.4273339769206!3d32.587349373743514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354076556798b369%3A0x14c90a5f609c282!2z44CSODY5LTM2MDIg54aK5pys55yM5LiK5aSp6I2J5biC5aSn55-i6YeO55S65LiK77yR77yV77yT77yQ4oiS77yT!5e0!3m2!1sja!2sjp!4v1686553705714!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="txt">
+                        <div class="name">大矢野店</div>
+                        熊本県上天草市大矢野町上1530-3
+                        <a href="#">
+                            <div class="btn">
+                                View More →
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="box fade">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.1103562797193!2d130.67136927692115!3d32.60324237373666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354087d4e9a3ddfd%3A0x89d45754cd9fc495!2z44CSODY5LTA2MzQg54aK5pys55yM5a6H5Z-O5biC5bCP5bed55S65L2P5ZCJ77yS77yZ77yT4oiS77yR!5e0!3m2!1sja!2sjp!4v1686553754965!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="txt">
+                        <div class="name">加工場</div>
+                        熊本県宇城市小川町住吉293-1
+                        <a href="#">
+                            <div class="btn">
+                                View More →
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="<?= esc_url(get_template_directory_uri()); ?>/asset/js/slick.min.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('.slick_01').slick({
+                    infinite: true, // 無限ループ
+                    autoplay: true, //オートプレイ
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplaySpeed: 5000, //オートプレイの切り替わり時間
+                    speed: 2000,
+                    accessibility: false,
+                    arrows: false,
+                    draggable: false,
+                    pauseOnHover: false,
+                    dots: false,
+                    fade: true,
+                    cssEase: 'linear',
+                });
+            });
+        </script>
+
 
 <?php get_footer(); ?>

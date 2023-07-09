@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package TAKAHASHI GROUP
+ * @package AGRI ATRS
  */
 
 get_header(); ?>
