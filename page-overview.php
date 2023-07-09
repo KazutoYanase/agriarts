@@ -12,692 +12,356 @@
 
 get_header(); ?>
 
-<!-- ヘッドパーツ -->
-<div class="sp_block logo__sp">
-    <a href="<?= esc_url(home_url()); ?>"><img alt="TAKAHASHI GROUP" src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/menu_logo.svg"></a>
+
+<!-- ページヘッダー -->
+<div class="top_logo_sp sp_block">
+    <img alt="株式会社アグリアーツ" src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/logo.png">
 </div>
-<div class="head_parts">
-    <div class="wrap">
-        <div class="ttl">
+<div class="page_header">
+    <div class="txt">
+        <div class="tit">
             会社概要
         </div>
-        <div class="enttl">
+        <div class="eng">
             Overview
         </div>
     </div>
-    <div class="sub_menu">
-        <div><a href="#philosophy">企業理念</a></div>
-        <div>｜</div>
-        <div><a href="#message">代表挨拶</a></div>
-        <div>｜</div>
-        <div><a href="#history">沿革</a></div>
-        <div>｜</div>
-        <div><a href="#profile">企業概要</a></div>
-        <div>｜</div>
-        <div><a href="#organization">組織図</a></div>
-        <div>｜</div>
-        <div><a href="#access">アクセス</a></div>
+    <div class="over_header">
     </div>
 </div>
+
 <!-- 企業理念 -->
-<div id="philosophy">
-    <div class="title_wrap">
-        <div class="jp">
+<div class="over_philosophy">
+    <div class="tit_wrap">
+        <div class="copy">
             企業理念
         </div>
-        <div class="en">
-            Corporate Philosophy
+        <div class="eng">
+            Philosophy
         </div>
-    </div>
-    <div class="wrapper">
-        <div class="ttl">
-            <div class="en">
-                Mission statement
-            </div>
-            <div class="jp">
-                グループ理念
-            </div>
-        </div>
-        <div class="catch fade_side">
-            ひとに、まちに、ここちよく
-        </div>
-        <div class="txt">
-            私たちは“地域のあったらいいなをお届けする”をテーマに、街と人の暮らしに寄り添い、<br class="pc_inline">たのしいを仕掛けるサービスで、笑顔あふれる生きがいを生み出します。
-        </div>
-    </div>
-    <div class="wrapper">
-        <div class="ttl">
-            <div class="en">
-                Value
-            </div>
-            <div class="jp">
-                真価
-            </div>
-        </div>
-        <div class="catch fade_side">
-            創意
-        </div>
-        <div class="txt">
-            繊維業で培った“商いの心”は、お客様と働くスタッフの笑顔や生きがいを生み出すための<br class="pc_inline">常なる創意創造の精神を持ち合わせます。
-        </div>
-    </div>
-    <div class="wrapper">
-        <div class="ttl pc_block">
-            <div class="en">
-                　
-            </div>
-            <div class="jp">
-                　
-            </div>
-        </div>
-        <div class="catch fade_side">
-            三方よし
-        </div>
-        <div class="txt">
-            相手よし、自分よしはみんなよし。<br class="pc_inline">地域社会にも良い影響が波及するという広い心と視野でチャレンジや工夫を惜しみません。
-        </div>
-    </div>
-    <div class="wrapper">
-        <div class="ttl pc_block">
-            <div class="en">
-                　
-            </div>
-            <div class="jp">
-                　
-            </div>
-        </div>
-        <div class="catch fade_side">
-            地域創造
-        </div>
-        <div class="txt">
-            時代や共に人と街とが行き交い、たくさんの笑顔が集う場を創出すること。<br class="pc_inline">地域の「あったらいいな」をお届けすること。<br class="pc_inline">それが事業創造カンパニーとしての高橋マインドです。
-        </div>
-    </div>
-    <div class="wrapper">
-        <div class="ttl">
-            <div class="en">
-                TG way
-            </div>
-            <div class="jp">
-                行動指針
-            </div>
-        </div>
-        <div class="catch fade_side">
-            生きガイド
-        </div>
-        <div class="txt">
-            私たちのサービスやマインドをお客様へお届けするために導き出した8つの道しるべです。
-            <div class="guide">
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/over_ikiguide.png" alt="生きガイド">
-            </div>
-        </div>
-    </div>
-</div>
-<!-- 代表挨拶 -->
-<div id="message">
-    <div class="title_wrap">
-        <div class="jp">
-            代表挨拶
-        </div>
-        <div class="en">
-            President Message
-        </div>
-    </div>
-    <div class="catch fade">
-        100年企業に向けて、<br class="sp_inline">地域とともに。
     </div>
     <div class="txt_wrap">
-        <div class="txt fade">
-            「創意」とは、創業者が残した大切な言葉のひとつで、自ら率先して新しいものを生み出す意志＝英語でいう「initiative」の意味と考えています。<br>
-            <br>
-            繊維業からスタートした高橋株式会社は、不動産、スポーツ・レジャー、フィットネス、飲食、農業、商業施設など多角的な事業領域で、福岡を中心に長崎、熊本、東京、米国へと広がっています。<br>
-            商いの心にルーツをもつ"三方良し"の気概をもって時代のニーズをつかみ、「それぞれの地域やお客様に喜ばれるサービスコンテンツは何か」を具現化。余暇・レジャーの時代にはゴルフ練習場やボウリング場を、生活の付加価値と健康増進を求めた時代にはスポーツクラブを、食の楽しみを広げる事業としてレストランやカフェを、そして創業85周年を迎えた2022年には誰もが自由にひと息つける憩いの場として民間公園にも着手しました。<br>
-            <br>
-            ここから100周年を見据え、社員一人ひとりの自発性を大事にしながら、高橋グループらしさである「地域×創意」で、今を生きる私たち、そして子どもたちの未来と環境を守る"心地良い場づくり"に、より一層取り組んでいきます。
+        <div class="imgbox fade">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/over__philo.png" alt="">
         </div>
-        <div class="ph fade">
-            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/over_president.jpg" alt="">
+        <div class="txtbox">
+            <div class="eyechach_a fade">
+                Mission ＝ 企業理念
+            </div>
+            <div class="catch_copy_a fade">
+                忘己利他
+            </div>
+            <div class="main_txt mgn_btm fade">
+                天台宗の開祖 最澄の言葉に『己を忘れて他を利するは慈悲の極みなり』という言葉があります。ここから転じて「忘己利他」と言われるようになったそうです。その「自分のことは後にして、まず人に喜んで頂く行いをする。そこにこそ、真の幸せがある」という意味合いは、わたしたちアグリ・アーツの考えにも通じています。<br>
+                <br>
+                自分のためにではなく、目の前の誰かのために。そして、さらにそこにつながる次の誰かのために行動する。そしてその行動が次の行動へと連鎖していく。そんな循環を生み出す原動力になることを目指します。<br>
+                <br>
+                お客さまや農業、ひいては社会のために何を資することができるのか。そう自らに問い続けることが、わたしたちアグリ・アーツの使命です。
+            </div>
+            <div class="eyechach_b fade">
+                Vision ＝ 経営方針
+            </div>
+            <div class="catch_copy_b fade">
+                農業の明るい未来を創造する
+            </div>
+            <div class="main_txt mgn_btm fade">
+                創業117年アグリ・アーツ（光延農園）は農業の総合会社として、農に携わるあらゆる方々と共に農業発展のお手伝いをしてきました。<br>
+                <br>
+                「日本の食を支える農業の新しい未来を共に創り上げていく」<br>
+                <br>
+                我々は、「地球温暖化」「生物多様性」「地方創生」等、国内外の抱えるさまざまな問題を、自然・地域・農家さんに寄り添い、持続可能な社会を目指して、その営み中で解決していく。<br>
+                そんな、お客様に信頼されるパートナーを目指してまいります。
+            </div>
+            <div class="eyechach_c fade">
+                Values ＝ 行動指針
+            </div>
+            <div class="catch_copy_c fade">
+                アグリ・アーツの3Q<br class="sp_inline">（サンキュー）
+            </div>
+            <div class="main_txt fade">
+                わたしたちアグリ・アーツのサービスや商品は、３つの「Q」に基づいています。「Quality」「Quantity」「Question」この３つを、お客さま届け、お客さまから「サンキュー」のお言葉をいただくことが、わたしたちのなによりもの原動力となっています。<br>
+                <br>
+                <span>① Quality<br></span>
+                伝統的な手法はもちろん、今現在の時流・トレンド、最先端の技術等、さまざまな要因を鑑みた上で、最適な商品やサービスの開発に努めています。また、毎年変動する気候や環境に、すぐに対応できる長年の経験を持ち合わせているのもクオリティの一環です。<br>
+                <br>
+                <span>② Quantity<br></span>
+                わたしたちアグリ・アーツは創業100年を超え、数多くのメーカーとの長年の取引実績があります。その信頼関係に基づき、アグリ・アーツは他社にはない圧倒的な品揃えがあります。その中から、それぞれのお客さまに最適なものをセレクトし、ご提案を差し上げることができることが特徴です。<br>
+                <br>
+                <span>③ Question<br></span>
+                今わたしたちアグリ・アーツが取り扱っている商品・サービスが、本当にお客様が最良であるのか、常に問い続けています。気候や社会情勢が以前にない急激なスピードで変化する現在、お客さまからの御意見を真摯に受け止めることで、ニーズに合った商品・サービスを常に用意できるよう心がけています。
+            </div>
         </div>
     </div>
 </div>
-<!-- 沿革 -->
-<div id="history">
-    <div class="title_wrap">
-        <div class="jp">
-            沿革
-        </div>
-        <div class="en">
-            History
-        </div>
-    </div>
-    <div class="history_wrap">
-        <div class="history_left">
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    1937年06月
-                </dt>
-                <dd class="history_txt">
-                    高橋川彦 朝鮮慶尚南道大邱府にて高橋絹織工場を創業
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    1945年08月
-                </dt>
-                <dd class="history_txt">
-                    終戦により工場解散
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    1947年07月
-                </dt>
-                <dd class="history_txt">
-                    久留米市諏訪野町へ工場を移転し、博多織の本格操業を開始
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    1949年01月
-                </dt>
-                <dd class="history_txt">
-                    資本金200万円にて「高橋絹織株式会社」を設立<br>
-                    高橋川彦 高橋絹織株式会社 代表取締役就任
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    1965年12月
-                </dt>
-                <dd class="history_txt">
-                    福岡市東区千早に西日本ゴルフセンターを開業
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    1966年10月
-                </dt>
-                <dd class="history_txt">
-                    久留米市に西日本スポーツガーデンを開業（現：スポガ久留米）
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    1970年12月
-                </dt>
-                <dd class="history_txt">
-                    西日本ゴルフセンターと同敷地内にボウリング場（のちの、スポガ香椎）等を新設し、一帯を総合レジャーランド「香椎スポーツガーデン（のちの、スポーツガーデン香椎）」として開業
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    1976年05月
-                </dt>
-                <dd class="history_txt">
-                    資本金1億円
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    1979年09月
-                </dt>
-                <dd class="history_txt">
-                    高橋彦二郎 高橋絹織株式会社 代表取締役就任
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    1987年07月
-                </dt>
-                <dd class="history_txt">
-                    久留米市にスポーツガーデン諏訪野を開業（現：スポーツクラブエスタ諏訪野）
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    1992年01月
-                </dt>
-                <dd class="history_txt">
-                    高橋絹織株式会社の社名を「高橋株式会社」に変更
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    1999年04月
-                </dt>
-                <dd class="history_txt">
-                    高橋英光 高橋株式会社 代表取締役就任<br>
-                    高橋博彦 高橋株式会社 取締役会長就任
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    2001年05月
-                </dt>
-                <dd class="history_txt">
-                    スポーツクラブエスタ香椎を開業
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    2001年11月
-                </dt>
-                <dd class="history_txt">
-                    久留米市諏訪野町の工場跡地に高橋株式会社（本社）社屋を新設
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    2002年11月
-                </dt>
-                <dd class="history_txt">
-                    エスタインドアテニスステージ香椎を開業
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    2003年05月
-                </dt>
-                <dd class="history_txt">
-                    スポーツクラブエスタ城南を開業（現：スポーツクラブエスタクロス城南）
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    2003年07月
-                </dt>
-                <dd class="history_txt">
-                    株式会社福岡シティボウルの株式取得<br>
-                    大橋シティボウルを継承
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    2006年04月
-                </dt>
-                <dd class="history_txt">
-                    スポーツレジャー事業部及びスポーツクラブ事業部を分社化し、「株式会社ガーデンボウル」「エスタ株式会社」を設立
-                </dd>
-            </dl>
-        </div>
-        <div class="history_left">
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    2008年04月
-                </dt>
-                <dd class="history_txt">
-                    高橋彦太郎 高橋株式会社 代表取締役就任
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    2009年01月
-                </dt>
-                <dd class="history_txt">
-                    スポーツクラブエスタ門司を継承
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    2009年04月
-                </dt>
-                <dd class="history_txt">
-                    不動産事業である関連会社 博英株式会社の社名を「博英不動産株式会社」に変更
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    2012年08月
-                </dt>
-                <dd class="history_txt">
-                    株式会社ガーデンボウルの社名を「スポーツガーデン株式会社」に変更
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    2014年09月
-                </dt>
-                <dd class="history_txt">
-                    プロント長崎浜町店を開業
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    2014年09月
-                </dt>
-                <dd class="history_txt">
-                    米国カリフォルニア州サンフランシスコに<br class="pc_inline">「Takahashi & Co.,Ltd.」設立
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    2015年05月
-                </dt>
-                <dd class="history_txt">
-                    プロント大塚店を継承
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    2015年07月
-                </dt>
-                <dd class="history_txt">
-                    プロント渋谷東武ホテル店を開業
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    2016年04月
-                </dt>
-                <dd class="history_txt">
-                    飲食事業として「ビーエルダイニング株式会社」を設立
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    2016年04月
-                </dt>
-                <dd class="history_txt">
-                    LUONTO久留米店を開業
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    2016年09月
-                </dt>
-                <dd class="history_txt">
-                    農業事業として「アークフィールド株式会社」を設立<br>
-                    三潴郡大木町にてアスパラガスの生産を開始
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    2016年10月
-                </dt>
-                <dd class="history_txt">
-                    Takahashi & Co.,Ltd.の社名を<br class="pc_inline">「TandemSprint,Inc.」に変更する
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    2017年03月
-                </dt>
-                <dd class="history_txt">
-                    うきは市つづら・分田地区にて棚田米の生産を開始
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    2017年04月
-                </dt>
-                <dd class="history_txt">
-                    山鹿市鹿央町にてニラの生産を開始
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    2017年10月
-                </dt>
-                <dd class="history_txt">
-                    宗像シティボウルを継承
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    2018年12月
-                </dt>
-                <dd class="history_txt">
-                    プロント日比谷を継承
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    2021年04月
-                </dt>
-                <dd class="history_txt">
-                    スポーツガーデン香椎を再開発し、ガーデンズ千早を開業<br>
-                    スポーツクラブエスタ香椎・エスタインドアテニスステージ香椎がスポーツクラブエスタクオリア千早としてガーデンズ千早内に新設移転
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    2022年04月
-                </dt>
-                <dd class="history_txt">
-                    ガーデンズ千早 ちはや公園を開業
-                </dd>
-            </dl>
-            <dl class="history_box fade">
-                <dt class="history_tit">
-                    2022年07月
-                </dt>
-                <dd class="history_txt">
-                    久留米市中央公園内にKURUMERUを開業
-                </dd>
-            </dl>
-        </div>
-    </div>
-</div>
-<!-- スライダー -->
-<div id="slider_wrap">
-    <div class="slick_02">
-        <div class="top_slider_panel">
-            <div class="top_slider_ph">
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/over_slide01.jpg" alt="" class="ph_top">
+<!-- 社長挨拶 -->
+<div class="over_message">
+    <div class="inner">
+        <div class="tit_wrap">
+            <div class="copy">
+                社長挨拶
+            </div>
+            <div class="eng">
+                Top Message
             </div>
         </div>
-        <div class="top_slider_panel">
-            <div class="top_slider_ph">
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/over_slide02.jpg" alt="" class="ph_btm">
+        <div class="txt_wrap">
+            <div class="box_ph fade">
+                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/over__mess.jpg" alt="">
             </div>
-        </div>
-        <div class="top_slider_panel">
-            <div class="top_slider_ph">
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/over_slide03.jpg" alt="" class="ph_top">
-            </div>
-        </div>
-        <div class="top_slider_panel">
-            <div class="top_slider_ph">
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/over_slide04.jpg" alt="" class="ph_btm">
-            </div>
-        </div>
-        <div class="top_slider_panel">
-            <div class="top_slider_ph">
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/over_slide05.jpg" alt="" class="ph_top">
-            </div>
-        </div>
-        <div class="top_slider_panel">
-            <div class="top_slider_ph">
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/over_slide06.jpg" alt="" class="ph_btm">
-            </div>
-        </div>
-        <div class="top_slider_panel">
-            <div class="top_slider_ph">
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/over_slide07.jpg" alt="" class="ph_top">
-            </div>
-        </div>
-        <div class="top_slider_panel">
-            <div class="top_slider_ph">
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/over_slide08.jpg" alt="" class="ph_btm">
-            </div>
-        </div>
-        <div class="top_slider_panel">
-            <div class="top_slider_ph">
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/over_slide09.jpg" alt="" class="ph_top">
-            </div>
-        </div>
-        <div class="top_slider_panel">
-            <div class="top_slider_ph">
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/over_slide10.jpg" alt="" class="ph_btm">
-            </div>
-        </div>
-        <div class="top_slider_panel">
-            <div class="top_slider_ph">
-                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/over_slide11.jpg" alt="" class="ph_top">
+            <div class="box_txt">
+                <div class="tit fade">
+                    伝統と新たな可能性で<br>
+                    農業の発展と未来を築く
+                </div>
+                <div class="copy fade">
+                    日頃より当社の活動にご支援、ご愛顧いただき誠にありがとうございます。<br>
+                    天草の地で創業以来９６年、農家さんと共に農業の発展に努めてまいりました。<br>
+                    <br>
+                    時代が移り変わり、平和な時代から混沌とする現在でも、「食の安全」「持続可能な農業」など、生きるために必要な食の重要性はいつの時代も変わることはありません。<br>
+                    <br>
+                    私たちの会社は、長年の経験や伝統的な手法を重んじながらも、農業の新たな可能性と革新を追求し、農家さんに寄り添い共に繁栄できるパートナーとして、農業業界の発展と未来を築いていける事をスタッフ一同楽しみしています。
+                </div>
+                <div class="name fade">
+                    代表取締役　光延 啓人
+                </div>
             </div>
         </div>
     </div>
 </div>
 <!-- 企業概要 -->
-<div id="profile">
-    <div class="title_wrap">
-        <div class="jp">
+<div class="over_profile">
+    <div class="tit_wrap">
+        <div class="copy">
             企業概要
         </div>
-        <div class="en">
+        <div class="eng">
             Profile
         </div>
     </div>
-    <div class="wrap">
-        <div class="ph fade">
-            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/over_profile.jpg" alt="">
+    <div class="detail_wrap">
+        <table>
+            <tbody>
+                <tr class="fade">
+                    <th>法人名</th>
+                    <td>株式会社アグリ・アーツ</td>
+                </tr>
+                <tr class="fade">
+                    <th>代表取締役</th>
+                    <td>
+                        光延啓人
+                    </td>
+                </tr>
+                <tr class="fade">
+                    <th>設立年月日</th>
+                    <td>
+                        1967/06/29
+                    </td>
+                </tr>
+                <tr class="fade">
+                    <th>資本金</th>
+                    <td>
+                        1000万円
+                    </td>
+                </tr>
+                <tr class="fade">
+                    <th>本店</th>
+                    <td>
+                        〒863-0025 <br class="sp_inline">熊本県天草市古川町１１番７号
+                    </td>
+                </tr>
+                <tr class="fade">
+                    <th>大矢野店</th>
+                    <td>
+                        〒869-3602 <br class="sp_inline">熊本県上天草市大矢野町上1530-3
+                    </td>
+                </tr>
+                <tr class="fade">
+                    <th>加工場</th>
+                    <td>
+                        〒869-0634 <br class="sp_inline">熊本県宇城市小川町住吉293－1
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- 沿革 -->
+<div class="over_history">
+    <div class="tit_wrap">
+        <div class="copy">
+            沿革
         </div>
-        <div class="inner fade">
-            <div class="ttl">社名</div>
-            <div class="txt">高橋株式会社</div>
+        <div class="eng">
+            History
         </div>
-        <div class="box fade">
-            <div>
-                <div class="ttl">代表取締役</div>
-                <div class="txt">高橋彦太郎</div>
+    </div>
+    <div class="detail_wrap">
+        <div class="nenpyo">
+            <table>
+                <tbody>
+                    <tr class="fade">
+                        <th>昭和2年6月</th>
+                        <td>光延磯吉と光延りえが種苗小売を目的に個人創業する。</td>
+                    </tr>
+                    <tr class="fade">
+                        <th>昭和9年</th>
+                        <td>
+                            シンガポールから持ち帰った種子から光延磯吉が選抜を行い、「はなやさい天草1号」を販売開始、現在に至るまで天草地域で広く栽培されている。
+                        </td>
+                    </tr>
+                    <tr class="fade">
+                        <th>昭和9年</th>
+                        <td>
+                            「はなやさい天草2号」を天草農業高校の伊藤芳文先生と共同で開発（廃番品種）
+                        </td>
+                    </tr>
+                    <tr class="fade">
+                        <th>昭和25年1月</th>
+                        <td>
+                            合名会社 光延農園として法人化<br>
+                            光延三博が代表社員に就任
+                        </td>
+                    </tr>
+                    <tr class="fade">
+                        <th>昭和42年10月</th>
+                        <td>
+                            株式会社 光延農園に称号変更<br>
+                            光延啓介が代表取締役社長に就任
+                        </td>
+                    </tr>
+                    <tr class="fade">
+                        <th>昭和42年10月</th>
+                        <td>
+                            合名会社 光延農園 農機具部門を（株）熊本ヤンマー天草支店に移行
+                            光延三博が支店長就任
+                        </td>
+                    </tr>
+                    <tr class="fade">
+                        <th>昭和49年10月</th>
+                        <td>
+                            熊本県本渡市中央新町１４−１０に本店移転
+                        </td>
+                    </tr>
+                    <tr class="fade">
+                        <th>昭和60年8月</th>
+                        <td>
+                            熊本県本渡市古川町１１−７に営業所を新築
+                        </td>
+                    </tr>
+                    <tr class="fade">
+                        <th>昭和60年9月</th>
+                        <td>
+                            光延啓介が取締役会長に就任<br>
+                            代わって光延隆三が代表取締役社長に就任
+                        </td>
+                    </tr>
+                    <tr class="fade">
+                        <th>平成12年9月</th>
+                        <td>
+                            生花小売業「フラワートレイル」開業
+                        </td>
+                    </tr>
+                    <tr class="fade">
+                        <th>平成20年2月</th>
+                        <td>
+                            光延隆三に変わり光延啓人が代表取締役社長に就任
+                        </td>
+                    </tr>
+                    <tr class="fade">
+                        <th>平成20年6月</th>
+                        <td>
+                            熊本県天草市古川町１１−７に本店移転
+                        </td>
+                    </tr>
+                    <tr class="fade">
+                        <th>平成22年4月</th>
+                        <td>
+                            熊本県上天草市大矢野町に大矢野店開設
+                        </td>
+                    </tr>
+                    <tr class="fade">
+                        <th>平成26年8月</th>
+                        <td>
+                            農業部門開設トマトハウス栽培を開始する
+                        </td>
+                    </tr>
+                    <tr class="fade">
+                        <th>平成29年8月</th>
+                        <td>
+                            苗生産会社「株式会社ウエストコーストファーム」設立
+                            光延啓人が代表取締役社長に就任
+                        </td>
+                    </tr>
+                    <tr class="fade">
+                        <th>令和2年4月</th>
+                        <td>
+                            益城倉庫開設
+                        </td>
+                    </tr>
+                    <tr class="fade">
+                        <th>令和3年8月</th>
+                        <td>
+                            株式会社光延農園から株式会社アグリ・アーツに社名変更
+                        </td>
+                    </tr>
+                    <tr class="fade">
+                        <th>令和3年11月</th>
+                        <td>
+                            熊本農材株式会社を事業譲渡により買収
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="phzone pc_block">
+            <div class="mgn_btm fade">
+                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/over__his01.jpg" alt="">
             </div>
-            <div>
-                <div class="ttl">専務取締役</div>
-                <div class="txt">高橋米彦</div>
+            <div class="mgn_btm fade">
+                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/over__his02.jpg" alt="">
             </div>
-            <div>
-                <div class="ttl">取締役</div>
-                <div class="txt">中島康彦</div>
+            <div class="mgn_btm fade">
+                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/over__his03.jpg" alt="">
             </div>
-            <div>
-                <div class="ttl">取締役</div>
-                <div class="txt">小野智博</div>
+            <div class="mgn_btm fade">
+                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/over__his04.jpg" alt="">
             </div>
-            <div>
-                <div class="ttl">監査役</div>
-                <div class="txt">内田健二</div>
+            <div class="fade">
+                <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/over__his05.jpg" alt="">
             </div>
-        </div>
-        <div class="inner fade">
-            <div class="ttl">本社所在地</div>
-            <div class="txt">福岡県久留米市諏訪野町2378</div>
-        </div>
-        <div class="inner fade">
-            <div class="ttl">創業</div>
-            <div class="txt">1937年6月</div>
-        </div>
-        <div class="inner fade">
-            <div class="ttl">設立</div>
-            <div class="txt">1949年1月</div>
-        </div>
-        <div class="inner fade">
-            <div class="ttl">資本金</div>
-            <div class="txt">1億円</div>
-        </div>
-        <div class="inner fade">
-            <div class="ttl">グループ会社</div>
-            <div class="txt">
-                スポーツガーデン株式会社、エスタ株式会社、ビーエルダイニング株式会社、アークフィールド株式会社、TandemSprint,lnc.、博英不動産株式会社
-            </div>
-        </div>
-        <div class="inner fade">
-            <div class="ttl">グループ従業員数</div>
-            <div class="txt">395名（うち正社員84名）</div>
         </div>
     </div>
 </div>
-<!-- 組織図 -->
-<div id="organization">
-    <div class="title_wrap">
-        <div class="jp">
-            組織図
+<div class="sp_block">
+    <div class="slick_01">
+        <div class="top_slider_panel">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/over__his01.jpg" alt="">
         </div>
-        <div class="en">
-            Organization
+
+        <div class="top_slider_panel">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/over__his02.jpg" alt="">
         </div>
-    </div>
-    <div class="ph fade">
-        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/over_organi.svg" alt="">
-    </div>
-</div>
-<!-- アクセス -->
-<div id="access">
-    <div class="title_wrap">
-        <div class="jp">
-            アクセス
+
+        <div class="top_slider_panel">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/over__his03.jpg" alt="">
         </div>
-        <div class="en">
-            Access
+
+        <div class="top_slider_panel">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/over__his04.jpg" alt="">
         </div>
-    </div>
-    <div class="wrap">
-        <div class="copy fade">
-            <div class="ttl">
-                高橋株式会社 本社
-            </div>
-            <div class="txt">
-                〒830-0037<br>
-                福岡県久留米市諏訪野町2378<br>
-                （カーナビでお越しの方は久留米市諏訪野町1903-1とご入力下さい。）
-            </div>
+
+        <div class="top_slider_panel">
+            <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/over__his05.jpg" alt="">
         </div>
-        <div class="map fade">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53352.29941126544!2d130.45324085820312!3d33.30525209999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f3!3m3!1m2!1s0x3541a44d8648073f%3A0x16ab517b6d55017d!2z6auY5qmL5qCq5byP5Lya56S-!5e0!3m2!1sja!2sjp!4v1679557523486!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <a href="https://goo.gl/maps/WbgYAJwbRoQrd8LbA" target="_blank" rel="noopener noreferrer">
-            <div class="btn">
-                Google Mapで見る →
-            </div>
-        </a>
-    </div>
-    <div class="wrap">
-        <div class="copy fade">
-            <div class="ttl">
-                高橋株式会社 千早会議室
-            </div>
-            <div class="txt">
-                〒813-0044<br>
-                福岡県福岡市東区千早3丁目6-37<br>
-                ガーデンズ千早内2F
-            </div>
-        </div>
-        <div class="map fade">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.2616347059256!2d130.43316751581935!3d33.6503820462462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f20!3m3!1m2!1s0x35418fa3fb860c17%3A0x5d63eab4c80434e7!2z44Ks44O844OH44Oz44K65Y2D5pep!5e0!3m2!1sja!2sjp!4v1679558748092!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <a href="https://goo.gl/maps/ZFhhc9xomns6Qycx6" target="_blank" rel="noopener noreferrer">
-            <div class="btn">
-                Google Mapで見る →
-            </div>
-        </a>
-    </div>
-    <div class="wrap">
-        <div class="copy fade">
-            <div class="ttl">
-                高橋株式会社 東京会議室
-            </div>
-            <div class="txt">
-                〒104-0028<br>
-                東京都中央区八重洲2丁目8-7 福岡ビル4F<br>
-                DIAGONAL RUN TOKYO内
-            </div>
-        </div>
-        <div class="map fade">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.013968807328!2d139.7657788158501!3d35.676658037829064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f20!3m3!1m2!1s0x60188be35efab3ed%3A0x6f258ebb0f304ad3!2zRElBR09OQUwgUlVOIFRPS1lP77yI44OA44Kk44Ki44K044OK44Or44Op44Oz5p2x5LqsL0RSVO-8iQ!5e0!3m2!1sja!2sjp!4v1679558888684!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <a href="https://goo.gl/maps/BLd8zA7ypNrmSR7z5" target="_blank" rel="noopener noreferrer">
-            <div class="btn">
-                Google Mapで見る →
-            </div>
-        </a>
     </div>
 </div>
 <script type="text/javascript" src="<?= esc_url(get_template_directory_uri()); ?>/asset/js/slick.min.js"></script>
 <script type="text/javascript">
     $(function() {
-        $('.slick_02').slick({
+        $('.slick_01').slick({
             infinite: true, // 無限ループ
             autoplay: true, //オートプレイ
-            slidesToShow: 4,
+            slidesToShow: 2,
             slidesToScroll: 1,
             autoplaySpeed: 0, //オートプレイの切り替わり時間
             speed: 20000,
@@ -708,14 +372,10 @@ get_header(); ?>
             dots: false,
             fade: false,
             cssEase: 'linear',
-            responsive: [{
-                breakpoint: 800, // 799px以下のサイズに適用
-                settings: {
-                    slidesToShow: 2,
-                },
-            }, ],
+            responsive: [{}, ],
         });
     });
 </script>
+
 
 <?php get_footer(); ?>
