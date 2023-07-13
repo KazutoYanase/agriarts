@@ -47,12 +47,12 @@ get_header(); ?>
                 花卉販売
             </div>
         </a>
-        <a href="#ec">
+        <a href="#details">
             <div>
                 募集要項
             </div>
         </a>
-        <a href="#admin">
+        <a href="#inquiry">
             <div>
                 お問い合わせ
             </div>
@@ -81,12 +81,12 @@ get_header(); ?>
                 花卉販売
             </div>
         </a>
-        <a href="#ec">
+        <a href="#details">
             <div>
                 募集要項
             </div>
         </a>
-        <a href="#admin">
+        <a href="#inquiry">
             <div>
                 お問い合わせ
             </div>
@@ -95,7 +95,7 @@ get_header(); ?>
 </div>
 
 <!-- ページヘッダー -->
-<div class="pjt_box" id="sales">
+<div class="pjt_box">
     <div class="title_wrap">
         <div class="bar rec_bg">
         </div>
@@ -159,7 +159,7 @@ get_header(); ?>
     </div>
 </div>
 <!-- インタビュー -->
-<div class="rec__inter">
+<div class="rec__inter" id="interview">
     <div class="tit_wrap">
         <div class="copy">
             インタビュー
@@ -168,7 +168,7 @@ get_header(); ?>
             Interview
         </div>
     </div>
-    <div class="job_tit">
+    <div class="job_tit" id="sales">
         <div class="ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__01_a.jpg" alt=""></div>
         <div class="txt">
             <div class="jpn">フィールドアドバイザー</div>
@@ -206,7 +206,7 @@ get_header(); ?>
 </div>
 
 <div class="rec__inter">
-    <div class="job_tit">
+    <div class="job_tit" id="vinyl">
         <div class="ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__02_a.jpg" alt=""></div>
         <div class="txt">
             <div class="jpn">ハウス用ビニール加工</div>
@@ -235,7 +235,7 @@ get_header(); ?>
 </div>
 
 <div class="rec__inter">
-    <div class="job_tit">
+    <div class="job_tit" id="agri">
         <div class="ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__03_a.jpg" alt=""></div>
         <div class="txt">
             <div class="jpn">青果生産</div>
@@ -264,7 +264,7 @@ get_header(); ?>
 </div>
 
 <div class="rec__inter">
-    <div class="job_tit">
+    <div class="job_tit" id="flower">
         <div class="ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__04_a.jpg" alt=""></div>
         <div class="txt">
             <div class="jpn">花卉販売</div>
@@ -292,7 +292,7 @@ get_header(); ?>
     </div>
 </div>
 <!-- 募集要項 -->
-<div class="details__wrap">
+<div class="details__wrap" id="details">
     <div class="tit_box">
         <div class="jpn">募集要項</div>
         <div class="eng">Details</div>
@@ -357,7 +357,7 @@ get_header(); ?>
     </div>
 </div>
 <!-- お問い合わせ -->
-<div class="inquiry__wrap">
+<div class="inquiry__wrap" id="inquiry">
     <div class="tit_box">
         <div class="jpn">採用に関するお問い合わせ</div>
         <div class="eng">Inquiry</div>

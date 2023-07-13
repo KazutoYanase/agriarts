@@ -31,7 +31,7 @@ get_header(); ?>
 </div>
 
 <!-- 企業理念 -->
-<div class="over_philosophy">
+<div class="over_philosophy" id="philosophy">
     <div class="tit_wrap">
         <div class="copy">
             企業理念
@@ -94,7 +94,7 @@ get_header(); ?>
     </div>
 </div>
 <!-- 社長挨拶 -->
-<div class="over_message">
+<div class="over_message" id="message">
     <div class="inner">
         <div class="tit_wrap">
             <div class="copy">
@@ -129,7 +129,7 @@ get_header(); ?>
     </div>
 </div>
 <!-- 企業概要 -->
-<div class="over_profile">
+<div class="over_profile" id="profile">
     <div class="tit_wrap">
         <div class="copy">
             企業概要
@@ -186,7 +186,7 @@ get_header(); ?>
     </div>
 </div>
 <!-- 沿革 -->
-<div class="over_history">
+<div class="over_history" id="history">
     <div class="tit_wrap">
         <div class="copy">
             沿革

@@ -137,7 +137,7 @@ get_header(); ?>
                     <div class="txt fade">
                         昭和２年の創業以来、天草を基盤として農業の発展のお手伝いをしてきたアグリ・アーツは「農業の明るい未来を創造する」をテーマに、よりお客様に信頼されるパートナーを目指していまいります。
                     </div>
-                    <a href="#">
+                    <a href="<?= esc_url(home_url('/overview/')); ?>">
                         <div class="btn">
                             more →
                         </div>
@@ -145,22 +145,22 @@ get_header(); ?>
                 </div>
             </div>
             <div class="wrap">
-                <a href="#">
+                <a href="<?= esc_url(home_url('/overview/#philosophy')); ?>">
                     <div class="maru fade">
                         <div>企業理念</div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="<?= esc_url(home_url('/overview/#message')); ?>">
                     <div class="maru fade">
                         <div>社長挨拶</div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="<?= esc_url(home_url('/overview/#profile')); ?>">
                     <div class="maru fade">
                         <div>会社概要</div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="<?= esc_url(home_url('/overview/#history')); ?>">
                     <div class="maru fade">
                         <div>沿革</div>
                     </div>
@@ -208,7 +208,7 @@ get_header(); ?>
         
         
                 <div class="toarchive">
-                    <a href="#">ニュース一覧へ →</a>
+                    <a href="<?= esc_url(home_url('/news/')); ?>">ニュース一覧へ →</a>
                 </div>
         
             </div>
@@ -225,7 +225,7 @@ get_header(); ?>
                     <div class="mainvis fade">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__pjt01.jpg" alt="">
                     </div>
-                    <a href="#">
+                    <a href="<?= esc_url(home_url('/projects/#sales')); ?>">
                         <div class="panel p_right">
                             <div class="lead">
                                 01 - Agricultural Material Sales
@@ -244,7 +244,7 @@ get_header(); ?>
                             </div>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="<?= esc_url(home_url('/recruit/#sales')); ?>">
                         <div class="is_btn_l fade_right">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__pjt01_is.png" alt="">
                         </div>
@@ -254,7 +254,7 @@ get_header(); ?>
                     <div class="mainvis fade">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__pjt02.jpg" alt="">
                     </div>
-                    <a href="#">
+                    <a href="<?= esc_url(home_url('/projects/#vinyl')); ?>">
                         <div class="panel p_left">
                             <div class="lead">
                                 02 - Vinyl Machining for Greenhouse
@@ -273,7 +273,7 @@ get_header(); ?>
                             </div>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="<?= esc_url(home_url('/recruit/#vinyl')); ?>">
                         <div class="is_btn_r fade_right">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__pjt02_is.png" alt="">
                         </div>
@@ -283,7 +283,7 @@ get_header(); ?>
                     <div class="mainvis fade">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__pjt03.jpg" alt="">
                     </div>
-                    <a href="#">
+                    <a href="<?= esc_url(home_url('/projects/#agri')); ?>">
                         <div class="panel p_right">
                             <div class="lead">
                                 03 - Agricultural Production
@@ -302,7 +302,7 @@ get_header(); ?>
                             </div>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="<?= esc_url(home_url('/recruit/#agri')); ?>">
                         <div class="is_btn_l fade_right">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__pjt03_is.png" alt="">
                         </div>
@@ -312,7 +312,7 @@ get_header(); ?>
                     <div class="mainvis fade">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__pjt04.jpg" alt="">
                     </div>
-                    <a href="#">
+                    <a href="<?= esc_url(home_url('/projects/#flower')); ?>">
                         <div class="panel p_left">
                             <div class="lead">
                                 04 - Flower Sales
@@ -331,7 +331,7 @@ get_header(); ?>
                             </div>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="<?= esc_url(home_url('/recruit/#flower')); ?>">
                         <div class="is_btn_r fade_right">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__pjt04_is.png" alt="">
                         </div>
@@ -341,7 +341,7 @@ get_header(); ?>
                     <div class="mainvis fade">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__pjt05.jpg" alt="">
                     </div>
-                    <a href="#">
+                    <a href="<?= esc_url(home_url('/projects/#ec')); ?>">
                         <div class="panel p_right">
                             <div class="lead">
                                 05 - E-Commerce
@@ -365,7 +365,7 @@ get_header(); ?>
                     <div class="mainvis fade">
                         <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/top__pjt06.jpg" alt="">
                     </div>
-                    <a href="#">
+                    <a href="<?= esc_url(home_url('/projects/#admin')); ?>">
                         <div class="panel p_left">
                             <div class="lead">
                                 06 - Sales Administration
@@ -405,7 +405,7 @@ get_header(); ?>
                     そんな職場環境づくりを目指しています。
                 </div>
                 <div class="btn_wrap">
-                    <a href="#">
+                    <a href="<?= esc_url(home_url('/recruit/#sales')); ?>">
                         <div class="img fade_left">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__01_a.jpg" alt="">
                         </div>
@@ -416,7 +416,7 @@ get_header(); ?>
                     </a>
                 </div>
                 <div class="btn_wrap mgn_left">
-                    <a href="#">
+                    <a href="<?= esc_url(home_url('/recruit/#vinyl')); ?>">
                         <div class="img fade_right">
                             <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__02_a.jpg" alt="">
                         </div>
@@ -428,7 +428,7 @@ get_header(); ?>
                 </div>
                 <div class="btn_flex">
                     <div class="box">
-                        <a href="#">
+                        <a href="<?= esc_url(home_url('/recruit/#agri')); ?>">
                             <div class="img fade">
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__03_a.jpg" alt="">
                             </div>
@@ -439,7 +439,7 @@ get_header(); ?>
                         </a>
                     </div>
                     <div class="box mgn_top">
-                        <a href="#">
+                        <a href="<?= esc_url(home_url('/recruit/#flower')); ?>">
                             <div class="img fade">
                                 <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__04_a.jpg" alt="">
                             </div>
@@ -466,9 +466,9 @@ get_header(); ?>
                             本社・フラワートレイル
                         </div>
                         熊本県天草市古川町１１番７号
-                        <a href="#">
+                        <a href="https://goo.gl/maps/TY4bTa2Gs8CPwNFV6" target="_blank">
                             <div class="btn">
-                                View More →
+                                Google Map →
                             </div>
                         </a>
                     </div>
@@ -478,9 +478,9 @@ get_header(); ?>
                     <div class="txt">
                         <div class="name">大矢野店</div>
                         熊本県上天草市大矢野町上1530-3
-                        <a href="#">
+                        <a href="https://goo.gl/maps/BgHm9Q3B3HDrTNSZ9" target="_blank">
                             <div class="btn">
-                                View More →
+                                Google Map →
                             </div>
                         </a>
                     </div>
@@ -490,9 +490,9 @@ get_header(); ?>
                     <div class="txt">
                         <div class="name">加工場</div>
                         熊本県宇城市小川町住吉293-1
-                        <a href="#">
+                        <a href="https://goo.gl/maps/A3xLSVSwi9LrzRUe8" target="_blank">
                             <div class="btn">
-                                View More →
+                                Google Map →
                             </div>
                         </a>
                     </div>
