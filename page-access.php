@@ -69,7 +69,7 @@ get_header(); ?>
         </table>
     </div>
 </div>
-<div class="map_box mgn_btm">
+<div class="map_box mgn_btm fade">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3366.709953058068!2d130.1834380769171!3d32.45369757380028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353fef001cc0b7b9%3A0x61b040d1c9124547!2z44CSODYzLTAwMjUg54aK5pys55yM5aSp6I2J5biC5Y-k5bed55S677yR77yR4oiS77yX!5e0!3m2!1sja!2sjp!4v1686553659249!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 
@@ -111,7 +111,7 @@ get_header(); ?>
         </table>
     </div>
 </div>
-<div class="map_box mgn_btm">
+<div class="map_box mgn_btm fade">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.7065462254527!2d130.4273339769206!3d32.587349373743514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354076556798b369%3A0x14c90a5f609c282!2z44CSODY5LTM2MDIg54aK5pys55yM5LiK5aSp6I2J5biC5aSn55-i6YeO55S65LiK77yR77yV77yT77yQ4oiS77yT!5e0!3m2!1sja!2sjp!4v1686553705714!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 
@@ -153,7 +153,7 @@ get_header(); ?>
         </table>
     </div>
 </div>
-<div class="map_box mgn_btm">
+<div class="map_box mgn_btm fade">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.1103562797193!2d130.67136927692115!3d32.60324237373666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f50!3m3!1m2!1s0x354087d4e9a3ddfd%3A0x89d45754cd9fc495!2z44CSODY5LTA2MzQg54aK5pys55yM5a6H5Z-O5biC5bCP5bed55S65L2P5ZCJ77yS77yZ77yT4oiS77yR!5e0!3m2!1sja!2sjp!4v1686553754965!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 

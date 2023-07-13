@@ -105,7 +105,7 @@ get_header(); ?>
             </div>
         </div>
     </div>
-    <div class="catch_copy">
+    <div class="catch_copy fade">
         種苗から大型ビニールハウスまで<br>
         なんでも揃う農業資材の総合商社
     </div>
@@ -123,15 +123,15 @@ get_header(); ?>
                 　そして、私たちは商品を販売するだけでなく、地域の皆さまのお役に立ち、皆さまに愛され必要とされるような存在になっていきたいと思っています。
             </div>
         </div>
-        <div class="sales_ph">
+        <div class="sales_ph fade">
             <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec1_01.jpg" alt="">
         </div>
     </div>
     <div class="sales_photo">
-        <div class="sph_01">
+        <div class="sph_01 fade">
             <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec1_02.jpg" alt="">
         </div>
-        <div class="sph_02">
+        <div class="sph_02 fade">
             <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec1_03.jpg" alt="">
         </div>
         <div class="sph_03">
@@ -146,19 +146,19 @@ get_header(); ?>
             Store Salling
         </div>
         <div class="inner">
-            <div class="main_vis">
+            <div class="main_vis fade">
                 <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec1_04.jpg" alt="">
             </div>
             <div class="main_txt">
                 <div class="copy">
                     　アグリ・アーツでは「みつのぶ農園」という店名にて農業資材の店舗販売を行っています。お店は天草市古川町と上天草市大矢野町にあり、創業当時より地元の皆さまにご愛顧頂いております。商品は種苗・肥料から各種農業資材や出荷のための梱包資材等を各種取り揃えてございます。店舗販売の特性上、お店がある近隣エリアの農家さんをはじめとするお客さまと顔を合わせ会話をしながら最適な商品をご案内しています。
                 </div>
-                <div class="ph">
+                <div class="ph fade">
                     <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec1_06.jpg" alt="">
                 </div>
             </div>
         </div>
-        <div class="sub_ph">
+        <div class="sub_ph fade">
             <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec1_05.jpg" alt="">
         </div>
     </div>
@@ -173,7 +173,7 @@ get_header(); ?>
             </div>
         </div>
     </div>
-    <div class="catch_copy">
+    <div class="catch_copy fade">
         １つとして同じものがない<br>
         ハウス用ビニールをつくる
     </div>
@@ -181,18 +181,18 @@ get_header(); ?>
         <div class="vinyl_txt">
             　農業用のビニールハウスは圃場の形や用途・仕様によって、１つ１つ素材も形状も異なり、すべてがオリジナルの仕様になります。新築のビニールハウスはもちろんのこと、張り替え用のビニールの加工も行なっています。POやポリ塩化ビニールの原反を裁断・継ぎ加工をして、ハウスに合わせた形に形成します。家庭用の小さめのものから、50メートルを超える大きなハウス用のものまで製造しています。
         </div>
-        <div class="vinyl_ph">
+        <div class="vinyl_ph fade">
             <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec2_01.jpg" alt="">
         </div>
     </div>
     <div class="vinyl_photo">
-        <div class="sph_01">
+        <div class="sph_01 fade">
             <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec2_02.jpg" alt="">
             <div class="cap">
                 出来上がったビニールを張り替え現場で綺麗に開くことができるように折り畳むのは大変難しく、職人の技による部分が大きいと言えます。
             </div>
         </div>
-        <div class="sph_02">
+        <div class="sph_02 fade">
             <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec2_03.jpg" alt="">
             <div class="cap">
                 ビニールは指定されたサイズに従って長さを測りながら形成します。横幅が大きいものについては横方向に継いで作ります。
@@ -243,7 +243,7 @@ get_header(); ?>
             </div>
         </div>
     </div>
-    <div class="catch_copy">
+    <div class="catch_copy fade">
         天草と空と海が育んだ<br>
         土壌で作る野菜
     </div>
@@ -252,23 +252,23 @@ get_header(); ?>
             <div class="txt">
                 　アグリ・アーツは熊本県天草市を本拠地としています。天草といえば高い空と青い海、そしてそこからもたらされる肥沃な大地。その天草の地でアグリ・アーツは青果生産を行なっています。主な生産品は各種野菜苗とミニトマトです。また近年はキクラゲの生産をはじめたり、有機米の生産にも取り組んでいます。
             </div>
-            <div class="ph">
+            <div class="ph fade">
                 <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec3_01.jpg" alt="">
             </div>
         </div>
-        <div class="ph_box mgn_b">
+        <div class="ph_box mgn_b fade">
             <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec3_02.jpg" alt="">
             <div class="cap">
                 野菜苗は「じゃがいも」「さつまいも」「タマネギ」を中心に育てています。それらの苗はアグリ・アーツが持つチャネルにて販売しております。
             </div>
         </div>
-        <div class="ph_box mgn_b mgn_l">
+        <div class="ph_box mgn_b mgn_l fade">
             <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec3_03.jpg" alt="">
             <div class="cap">
                 御領小学校跡地に建てられた巨大なビニールハウス内にて、様々な色や種類のミニトマトを生産しています。
             </div>
         </div>
-        <div class="ph_box">
+        <div class="ph_box fade">
             <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec3_04.jpg" alt="">
             <div class="cap">
                 近年はキクラゲの生産に取り組んでおり、生産体制を整えています。
@@ -286,7 +286,7 @@ get_header(); ?>
             </div>
         </div>
     </div>
-    <div class="catch_copy">
+    <div class="catch_copy fade">
         花につつまれた<br>
         空間を作る
     </div>
@@ -297,15 +297,15 @@ get_header(); ?>
                 花束やブーケ、各種アレンジや色々なお花を用いたアイテムを通じて、花や植物をもっと身近に感じ、日々の暮らしに取り入れていただけると幸いです。
             </div>
         </div>
-        <div class="ph">
+        <div class="ph fade">
             <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec4_01.jpg" alt="">
         </div>
     </div>
     <div class="flower_photo">
-        <div class="sph_01">
+        <div class="sph_01 fade">
             <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec4_02.jpg" alt="">
         </div>
-        <div class="sph_02">
+        <div class="sph_02 fade">
             <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec4_03.jpg" alt="">
         </div>
     </div>
@@ -353,7 +353,7 @@ get_header(); ?>
             </div>
         </div>
     </div>
-    <div class="catch_copy">
+    <div class="catch_copy fade">
         日本全国<br>
         いつでもどこでも
     </div>
@@ -368,7 +368,7 @@ get_header(); ?>
                 </a>
             </div>
         </div>
-        <div class="ph_box pc_block">
+        <div class="ph_box pc_block fade">
             <a href="http://www.mitsunobu-nouen.com" target="_blank" rel=”noopener noreferrer”>
                 <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec5_02.jpg" alt="">
             </a>
@@ -385,7 +385,7 @@ get_header(); ?>
             </div>
         </div>
     </div>
-    <div class="catch_copy">
+    <div class="catch_copy fade">
         欠かすことができない<br>
         後方支援
     </div>
@@ -393,7 +393,7 @@ get_header(); ?>
         <div class="txt">
             　販売事務は農業資材販売・ハウス用ビニール加工・青果生産・花卉販売・EC販売のすべての管理をしています。随時データを集計し、それを的確に分析して、現場に正確なフィードバックを提供しています。その他にも顧客データの管理や営業プロセスの効率化、高度なセキュリティ対策によるデータの保護等の活動の基盤となる幅広い業務を担当しています。販売事務はすべての現場にとって欠かすことのできない後方支援です。
         </div>
-        <div class="ph">
+        <div class="ph fade">
             <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/pjt__sec6_01.jpg" alt="">
         </div>
     </div>

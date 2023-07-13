@@ -107,10 +107,10 @@ get_header(); ?>
         農業の未来を創るために<br>
         天草で働きませんか
     </div>
-    <div class="lead_copy">
+    <div class="lead_copy fade">
         アグリ・アーツでは<br class="sp_inline">一緒に働く仲間を募集しています。
     </div>
-    <div class="body_copy">
+    <div class="body_copy fade">
         アグリ・アーツは<br class="sp_inline">熊本県天草市を本拠地として、<br>
         天草・熊本・九州一円で農業資材販売・<br class="sp_inline">ハウス用ビニール加工・青果生産・花卉販売の<br class="sp_inline">事業を展開しています。<br>
         私たちは、農業の未来を担う人たちと一緒に働き、<br class="sp_inline">地域の農業を支えることを目指しています。<br>
@@ -169,7 +169,7 @@ get_header(); ?>
         </div>
     </div>
     <div class="job_tit" id="sales">
-        <div class="ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__01_a.jpg" alt=""></div>
+        <div class="ph fade"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__01_a.jpg" alt=""></div>
         <div class="txt">
             <div class="jpn">フィールドアドバイザー</div>
             <div class="eng">Field Advisor</div>
@@ -192,7 +192,7 @@ get_header(); ?>
                 前職は自動車製造業でしたが、地元である天草に戻りたかった意向もあってアグリ・アーツに入社しました。入社後の数年は生花販売や本店販売部の店長等を勤めていましたが、周囲からの勧めがあり、今は営業の仕事をしています。営業は顧客である農家さんに伺い注文を請けたり、商品を届けたりするのが主な仕事ですが、実際にはそれ以上に大切にしていることがあります。それは農家さんとコミュニケーションをたくさん取ることです。近隣の農家さんの状況や対策を伝えたり、最新のトレンド動向を伝える中で、その農家さんの悩みを伺い解決するお手伝いをすることができるからです。また情報だけでなく、実際にビニールハウスの張り替え等の農家さんのお手伝いをしたり、逆に生産物をお土産に頂いたり、そうしたやり取りの１つ１つが信頼関係を築き、お互いの笑顔を生んでいると思います。
             </div>
         </div>
-        <div class="ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__01_c.jpg" alt=""></div>
+        <div class="ph fade"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__01_c.jpg" alt=""></div>
     </div>
     <div class="txt_box fle_rev">
         <div class="copy">
@@ -201,13 +201,13 @@ get_header(); ?>
                 それが伝わっていったのか、２年前に担当になった三角地区では、担当した当初お客さまは１件だけでしたが、今では２０件以上の農家さんがお取引をしてくださっています。それもこれもそれぞれの農家さんとの信頼関係があってこそのことだと思いますので、性急にお取引先を増やすのではなく、それぞれの農家さんに丁寧に向き合い、一緒に悩み考え、そして喜び、今後とも末永いお付き合いをさせて頂きたいと考えています。
             </div>
         </div>
-        <div class="ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__01_d.jpg" alt=""></div>
+        <div class="ph fade"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__01_d.jpg" alt=""></div>
     </div>
 </div>
 
 <div class="rec__inter">
     <div class="job_tit" id="vinyl">
-        <div class="ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__02_a.jpg" alt=""></div>
+        <div class="ph fade"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__02_a.jpg" alt=""></div>
         <div class="txt">
             <div class="jpn">ハウス用ビニール加工</div>
             <div class="eng">Vinyl Machining for Greenhouse</div>
@@ -230,13 +230,13 @@ get_header(); ?>
                 前職は農業資材会社のFRPハウスの加工場に勤めており、その経験が活かせればと思い現職に就くことになりました。現在は加工場でPO加工、フォークリフトを使った原反の入れ替え、原反の接ぎ作業等を担当しています。同業種からの転職でしたが、扱う素材がまったく異なるために入社当初は慣れないこともありました。特にPOは素材の種類が多く、素材に合わせて対応することが難しい部分もありました。ですが、そんな時は先輩社員の方々が丁寧にご指導頂いたことで色々な作業ができるようになり、嬉しく思うと同時に仕事のやり甲斐にもなっていると思います。加工場での作業は1人で出来ないものが多くチームワークが大切ですが、普段から休憩中や終業後に先輩社員の方々と肩肘張らない会話をして仲良くして頂いているので、円滑に仕事ができています。これからも安全に気をつけながら、よりスムーズに仕事ができるようにしていきたいと思っています。
             </div>
         </div>
-        <div class="ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__02_c.jpg" alt=""></div>
+        <div class="ph fade"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__02_c.jpg" alt=""></div>
     </div>
 </div>
 
 <div class="rec__inter">
     <div class="job_tit" id="agri">
-        <div class="ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__03_a.jpg" alt=""></div>
+        <div class="ph fade"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__03_a.jpg" alt=""></div>
         <div class="txt">
             <div class="jpn">青果生産</div>
             <div class="eng">Agricultural Production</div>
@@ -259,13 +259,13 @@ get_header(); ?>
                 もともと天草出身でしたが、熊本の大学を卒業後、鹿児島で観光業に就いていました。ですが、前々から農業に興味があり、自然に携わる仕事がしたいと思っていたことと、天草に帰りたいとの想いからアグリ・アーツに入社し現在の職を勤めています。現在はトマト・各種苗・キクラゲの栽培を担当しています。トマトの生育管理において一番気をつけているのは幹の太さです。１年間の長期に渡り実を収穫するためには太い幹に育てないといけません。数年前にようやく年間通して大きな失敗なく生育管理できたときは感慨深いものがありました。今後はアグリ・アーツがより良い農業法人となることはもちろんのこと、周囲の農家さんの助けにもなるような存在になりたいと思っています。あと将来的にはアボガドの栽培にも取り組んでみたいと思っていて、目下色々とチャレンジしている最中です。
             </div>
         </div>
-        <div class="ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__03_c.jpg" alt=""></div>
+        <div class="ph fade"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__03_c.jpg" alt=""></div>
     </div>
 </div>
 
 <div class="rec__inter">
     <div class="job_tit" id="flower">
-        <div class="ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__04_a.jpg" alt=""></div>
+        <div class="ph fade"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__04_a.jpg" alt=""></div>
         <div class="txt">
             <div class="jpn">花卉販売</div>
             <div class="eng">Flower Sales</div>
@@ -288,7 +288,7 @@ get_header(); ?>
                 昔からお花や植物が好きで自分で育てたりするなかで、フラワートレイルが「とても可愛いお店だな」と思っていて、前から知っていました。そんなところに求人が出ていることを知り、未経験でしたが採用していただけました。現在は生花アレンジの勉強をしながら、キャンドルやシュシュを作って販売したり、店長のアシスタントを務めたりしています。まだ経験が浅いので毎日が勉強で、特にお花の名前を覚えるのが大変です。例えばバラであれば、バラの中での品種が数多くあったり、さらにその名前が横文字で長かったりと、この仕事に就いてみないと分からないことが多々あります。ですが、折角自分の好きなことでお仕事をさせていただいてるので、今後もお花や植物の勉強をして詳しくなったり、綺麗なフラワーアレンジを作れるようになることが今の目標です。
             </div>
         </div>
-        <div class="ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__04_c.jpg" alt=""></div>
+        <div class="ph fade"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__04_c.jpg" alt=""></div>
     </div>
 </div>
 <!-- 募集要項 -->
