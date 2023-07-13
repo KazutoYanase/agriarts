@@ -292,8 +292,8 @@ get_header(); ?>
     </div>
 </div>
 <!-- 募集要項 -->
-<div class="details__wrap" id="details">
-    <div class="tit_box">
+<div class="details__wrap">
+    <div class="tit_box" id="details">
         <div class="jpn">募集要項</div>
         <div class="eng">Details</div>
     </div>

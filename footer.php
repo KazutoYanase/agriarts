@@ -46,7 +46,7 @@
 						<a href="<?= esc_url(home_url('/projects/#agri')); ?>">青果生産</a><br>
 						<a href="<?= esc_url(home_url('/projects/#flower')); ?>">花卉販売</a><br>
 						<a href="<?= esc_url(home_url('/projects/#ec')); ?>">EC販売</a><br>
-						<a href="<?= esc_url(home_url('/projects/#admin')); ?>">営業事務</a>
+						<a href="<?= esc_url(home_url('/projects/#admin')); ?>">販売事務</a>
 					</div>
 				</div>
 				<div class="m__1">
