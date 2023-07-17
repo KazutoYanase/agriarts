@@ -199,8 +199,6 @@ get_header(); ?>
                         wp_reset_postdata();
                     }
                     ?>
-        
-        
                 <div class="toarchive">
                     <a href="<?= esc_url(home_url('/news/')); ?>">ニュース一覧へ →</a>
                 </div>
