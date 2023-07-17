@@ -2004,6 +2004,100 @@ img {
 }
 
 /*-----------------------------------------------------*/
+// ニュース　＞　アーカイブページ
+/*-----------------------------------------------------*/
+.wp-pagenavi {
+    clear: both;
+    text-align: center;
+}
+
+.wp-pagenavi a,
+.wp-pagenavi span {
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    margin: 0 2px;
+    white-space: nowrap;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+}
+
+.wp-pagenavi a:hover {
+    color: #333;
+    background-color: #effaf2;
+    border-color: #ccc;
+}
+
+.wp-pagenavi span.current {
+    color: #fff;
+    background-color: #00aa32;
+    border-color: #00aa32;
+    font-weight: bold;
+}
+
+.wp-pagenavi span.pages {
+    display: none;
+}
+.wp-pagenavi .first {
+    display: none;
+}
+.wp-pagenavi .last {
+    display: none;
+}
+.wp-pagenavi .extend {
+    display: none;
+}
+.archive_wrap {
+    width: 900px;
+    margin: 100px auto 0;
+    border-top: 1px solid #ccc;
+
+    .news__box {
+        border-bottom: 1px solid #ccc;
+        padding: 25px;
+
+        .inner {
+            display: flex;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+
+            .date {
+                padding: 5px 15px 5px 0;
+            }
+
+            .news_pjt {
+                border: 1px solid #333;
+                border-radius: 7px;
+                padding: 5px 20px;
+                margin-right: 5px;
+            }
+        }
+
+        .title {
+            font-size: 18px;
+            line-height: 2;
+        }
+
+    }
+
+    .pager {
+        padding: 100px 0 150px;
+    }
+
+}
+
+
+
+/*-----------------------------------------------------*/
 // 電話番号リンク
 /*-----------------------------------------------------*/
 @media (min-width: 600px) {

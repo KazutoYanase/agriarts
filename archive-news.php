@@ -9,17 +9,17 @@ get_header(); ?>
 
 
 <!-- ヘッドパーツ -->
-<div class="sp_block logo__sp">
-    <a href="<?= esc_url(home_url()); ?>"><img alt="TAKAHASHI GROUP" src="<?= esc_url(get_template_directory_uri()); ?>/asset/image/menu_logo.svg"></a>
+<div class="sp_block top_logo_sp">
+    <a href="<?= esc_url(home_url()); ?>"><img alt="アグリ・アーツ" src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/logo.png"></a>
 </div>
-<div class="head_parts">
-  <div class="wrap">
-    <div class="ttl">
-      ニュース
-    </div>
-    <div class="enttl">
-      News
-    </div>
+<div class="page_header">
+  <div class="txt">
+      <div class="tit">
+          ニュース
+      </div>
+      <div class="eng">
+          News
+      </div>
   </div>
 </div>
 <!-- ニュースアーカイブ -->
@@ -43,14 +43,10 @@ get_header(); ?>
 
 
 <div class="news__box">
-  <div class="news_kind">
-    <div class="kinds_<?php echo $this_term_slug; ?>"><?= esc_html($this_term); ?></div>
-  </div>
   <div class="inner">
     <div class="date"><?= esc_html(get_post_time("Y.m.d")); ?></div>
-    <div class="news_pjt"><?= esc_html($this_pjt); ?></div>
   </div>
-  <div class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+  <div class="title fade"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
 </div>
 
 
