@@ -1619,4 +1619,95 @@
 
 }
 
+/*-----------------------------------------------------*/
+// ニュース　＞　シングルページ
+/*-----------------------------------------------------*/
+.news_wrap {
+    width: 90%;
+    margin: 30px auto 60px;
 
+    .head {
+        margin-bottom: 10px;
+
+        .inner {
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 7px;
+
+            .date {
+                padding: 5px 7px 5px 0;
+            }
+        }
+    }
+
+    .entry {
+        h1 {
+            font-size: 25px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        h2 {
+            font-size: 21px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        figcaption {
+            font-size: 10px;
+        }
+
+        .aligncenter {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .alignright {
+            float: none;
+            margin-left: 0;
+        }
+
+        .alignleft {
+            float: none;
+            margin-right: 0;
+        }
+        .clearfix {
+            margin-bottom: 0;
+        }
+    }
+
+    .news_zengo {
+        margin: 60px auto 0;
+        display: flex;
+        justify-content: space-between;
+
+        .rightside {
+            text-align: right;
+        }
+
+        .box {
+            width: 40%;
+
+            .top {
+                font-size: 14px;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+
+            .btm {
+                display: none;
+            }
+        }
+    }
+}

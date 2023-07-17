@@ -9,15 +9,18 @@ get_header(); ?>
 
 
 <!-- ヘッドパーツ -->
-<div class="head_parts">
-	<div class="wrap">
-		<div class="ttl">
-			ニュース
-		</div>
-		<div class="enttl">
-			News
-		</div>
-	</div>
+<div class="sp_block top_logo_sp">
+	<a href="<?= esc_url(home_url()); ?>"><img alt="アグリ・アーツ" src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/logo.png"></a>
+</div>
+<div class="page_header">
+  <div class="txt">
+	  <div class="tit">
+		  ニュース
+	  </div>
+	  <div class="eng">
+		  News
+	  </div>
+  </div>
 </div>
 <!-- ニュース -->
 <div class="news_wrap">
@@ -39,12 +42,8 @@ get_header(); ?>
 	?>
 
 	<div class="head">
-		<div class="news_kind">
-			<div class="kinds_<?php echo $this_term_slug; ?>"><?= esc_html($this_term); ?></div>
-		</div>
 		<div class="inner">
 			<div class="date"><?= esc_html(get_post_time("Y.m.d")); ?></div>
-			<div class="news_pjt"><?= esc_html($this_pjt); ?></div>
 		</div>
 	</div>
 

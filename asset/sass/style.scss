@@ -2046,15 +2046,19 @@ img {
 .wp-pagenavi span.pages {
     display: none;
 }
+
 .wp-pagenavi .first {
     display: none;
 }
+
 .wp-pagenavi .last {
     display: none;
 }
+
 .wp-pagenavi .extend {
     display: none;
 }
+
 .archive_wrap {
     width: 900px;
     margin: 100px auto 0;
@@ -2095,7 +2099,88 @@ img {
 
 }
 
+/*-----------------------------------------------------*/
+// ニュース　＞　シングルページ
+/*-----------------------------------------------------*/
+.news_wrap {
+    width: 900px;
+    margin: 50px auto 150px;
 
+    .head {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 0;
+        margin-bottom: 15px;
+
+        .inner {
+            display: flex;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+
+            .date {
+                padding: 5px 15px 5px 0;
+            }
+        }
+    }
+
+    .entry {
+        h1 {
+            font-size: 36px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 21px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.75;
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+
+        figcaption {
+            font-size: 12px;
+        }
+    }
+
+    .news_zengo {
+        margin: 90px auto 0;
+        padding-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #ccc;
+
+        .rightside {
+            text-align: right;
+        }
+
+        .box {
+            width: 40%;
+
+            .top {
+                font-size: 14px;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+
+            .btm {
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+}
 
 /*-----------------------------------------------------*/
 // 電話番号リンク
