@@ -175,36 +175,30 @@ get_header(); ?>
                 <div class="btm">News</div>
             </h2>
             <div class="inner">
-                <div class="report">
-                    <div class="wrapper fade">
-                        <div class="date">2023年12月12日</div>
-                    </div>
-                    <div class="ttl fade">
-                        <a href="#">
-                            令和５年度 社員旅行にて沖縄へ行って参りました。
-                        </a>
-                    </div>
-                </div>
-                <div class="report">
-                    <div class="wrapper fade">
-                        <div class="date">2023年12月12日</div>
-                    </div>
-                    <div class="ttl fade">
-                        <a href="#">
-                            弊社にて開発・製造を行なっている新商品「●●●●●●」を発売いたします。
-                        </a>
-                    </div>
-                </div>
-                <div class="report">
-                    <div class="wrapper fade">
-                        <div class="date">2023年12月12日</div>
-                    </div>
-                    <div class="ttl fade">
-                        <a href="#">
-                            夏季休業のお知らせ
-                        </a>
-                    </div>
-                </div>
+                    
+                <?php 
+                    $args = array(
+                        'post_type' => 'news',
+                        'posts_per_page' => '3'
+                    );
+                    $the_query = new WP_Query($args);
+                    if ($the_query->have_posts()) {
+                        while ($the_query->have_posts()) {
+                            $the_query->the_post(); // ループ内で記事のデータを取得
+                    ?>
+                        <div class="report">
+                            <div class="wrapper fade">
+                                <div class="date"><?= esc_html(get_post_time("Y.m.d")); ?></div>
+                            </div>
+                            <div class="ttl fade">
+                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                            </div>
+                        </div>
+                    <?php
+                        }
+                        wp_reset_postdata();
+                    }
+                    ?>
         
         
                 <div class="toarchive">
