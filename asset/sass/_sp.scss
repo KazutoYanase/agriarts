@@ -577,22 +577,25 @@
                 width: 85%;
                 position: relative;
 
-                .img {
-                    img {
-                        border-radius: 10px;
+                a {
+                    position: static;
+                    .img {
+                        img {
+                            border-radius: 10px;
+                        }
                     }
-                }
 
-                .pos {
-                    padding: 10px 5%;
-                    bottom: 10px;
-                    left: 0;
-                    font-size: 16px;
-                    width: 90%;
-                    border-radius: 0;
+                    .pos {
+                        padding: 10px 5%;
+                        bottom: 10px;
+                        left: 0;
+                        font-size: 16px;
+                        width: 90%;
+                        border-radius: 0;
 
-                    span {
-                        font-size: 10px;
+                        span {
+                            font-size: 10px;
+                        }
                     }
                 }
             }
@@ -687,7 +690,7 @@
         height: 36vw;
         border-radius: 18vw 0 0 18vw;
     }
-    
+
     .acc_header {
         margin-top: 25px;
         width: 96%;
@@ -1194,31 +1197,32 @@
             margin-top: 15px;
         }
     }
+
     /*-----------------------------------------------------*/
     // 事業案内　＞　03青果生産
     /*-----------------------------------------------------*/
     .agri_box {
         width: 90%;
         margin: 0 auto 60px;
-    
+
         .inner {
             flex-wrap: wrap-reverse;
             margin-bottom: 20px;
-    
+
             .txt {
                 width: 100%;
                 font-size: 14px;
                 margin-top: 10px;
             }
-    
+
             .ph {
                 width: 100%;
             }
         }
-    
+
         .ph_box {
             width: 80%;
-    
+
             .cap {
                 font-size: 12px;
                 margin-top: 5px;
@@ -1226,11 +1230,12 @@
                 text-align: justify;
             }
         }
-    
+
         .mgn_b {
             margin-bottom: 10px;
         }
     }
+
     /*-----------------------------------------------------*/
     // 事業案内　＞　04花卉販売
     /*-----------------------------------------------------*/
@@ -1238,38 +1243,39 @@
         width: 90%;
         margin: 0 auto 20px;
         flex-wrap: wrap-reverse;
-        
+
         .txt {
             width: 100%;
             margin-left: 0;
             margin-top: 10px;
-    
+
             .body_copy {
                 font-size: 14px;
             }
         }
-    
+
         .ph {
             width: 100%;
             margin-right: 0;
         }
     }
-    
+
     .flower_photo {
         width: 90%;
         margin: 0 auto 20px;
         flex-wrap: wrap;
-    
+
         .sph_01 {
             width: 75%;
             margin-left: auto;
         }
-    
+
         .sph_02 {
             width: 75%;
             margin-top: 20px;
         }
     }
+
     /*-----------------------------------------------------*/
     // 事業案内　＞　05EC販売
     /*-----------------------------------------------------*/
@@ -1277,16 +1283,17 @@
         width: 90%;
         margin: 0 auto 60px;
         flex-wrap: wrap-reverse;
-    
+
         .txt_box {
             width: 100％;
-    
+
             .copy {
                 font-size: 14px;
                 margin-bottom: 20px;
             }
         }
     }
+
     /*-----------------------------------------------------*/
     // 事業案内　＞　06販売事務
     /*-----------------------------------------------------*/
@@ -1294,18 +1301,19 @@
         width: 90%;
         margin: 0 auto 60px;
         flex-wrap: wrap;
-    
+
         .txt {
             width: 100%;
             font-size: 14px;
         }
-    
+
         .ph {
             width: 80%;
             margin: 0 auto;
         }
     }
 }
+
 /*-----------------------------------------------------*/
 // アクセス
 /*-----------------------------------------------------*/
@@ -1377,6 +1385,7 @@
 .mgn_btm {
     margin-bottom: 60px;
 }
+
 /*-----------------------------------------------------*/
 // News
 /*-----------------------------------------------------*/
@@ -1384,39 +1393,48 @@
     width: 90%;
     margin: 50px auto 60px;
 }
+
 .news_outer {
     width: 90%;
     margin: 50px auto 60px;
+
     .title {
         font-size: 18px;
         margin-bottom: 20px;
         line-height: 1.5;
     }
+
     .wrap {
         margin-bottom: 15px;
+
         .txt {
             width: 100%;
             line-height: 1.75;
             font-size: 14px;
         }
+
         .ph {
             width: 100%;
             margin-bottom: 15px;
         }
     }
+
     .rev_wrap {
         margin-bottom: 15px;
+
         .txt {
             width: 100%;
             line-height: 1.75;
             font-size: 14px;
         }
+
         .ph {
             width: 100%;
             margin-bottom: 15px;
         }
     }
 }
+
 /*-----------------------------------------------------*/
 // 採用情報　＞　キャッチコピー
 /*-----------------------------------------------------*/
@@ -1523,6 +1541,7 @@
         }
     }
 }
+
 /*-----------------------------------------------------*/
 // 採用情報　＞　募集要項
 /*-----------------------------------------------------*/
@@ -1550,6 +1569,7 @@
 
         table {
             margin-bottom: 50px;
+
             th {
                 width: 18%;
                 padding: 20px 0;
@@ -1558,12 +1578,14 @@
             td {
                 padding: 20px 0 20px 7px;
             }
+
             .topline {
                 font-size: 20px;
             }
         }
     }
 }
+
 /*-----------------------------------------------------*/
 // 採用情報　＞　お問い合わせ
 /*-----------------------------------------------------*/
@@ -1581,6 +1603,40 @@
 
     .img {
         margin-top: 80px;
+    }
+}
+
+/*ーーーーーーーーーーーーーーーー*/
+//　　MW WP Formカスタマイズ
+/*ーーーーーーーーーーーーーーーー*/
+.inquiry__wrap .formwrap {
+    margin-top: 30px;
+
+    .cform th,
+    .cform td {
+        width: 100%;
+        padding: 0;
+        display: block;
+        border-top: none;
+    }
+
+    .cform th {
+        font-size: 14px;
+    }
+
+    .form__done {
+        dl {
+            dt {
+                font-size: 16px;
+                margin-bottom: 25px;
+                line-height: 2.5;
+            }
+
+            dd {
+                line-height: 2.5;
+                font-size: 14px;
+            }
+        }
     }
 }
 
@@ -1686,6 +1742,7 @@
             float: none;
             margin-right: 0;
         }
+
         .clearfix {
             margin-bottom: 0;
         }

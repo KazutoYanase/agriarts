@@ -159,7 +159,7 @@ img {
 /* -=-=-=- Fade効果 -=-=-=- */
 .fade {
   opacity: 0;
-  transform: translateY(36px);
+  transform: translateY(25px);
   transition: all 1000ms;
 }
 
@@ -597,12 +597,14 @@ img {
 }
 .top_recruit .inner .btn_flex .box {
   width: 485px;
+}
+.top_recruit .inner .btn_flex .box a {
   position: relative;
 }
-.top_recruit .inner .btn_flex .box .img img {
+.top_recruit .inner .btn_flex .box a .img img {
   border-radius: 10px;
 }
-.top_recruit .inner .btn_flex .box .pos {
+.top_recruit .inner .btn_flex .box a .pos {
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.75);
   padding: 20px 30px;
@@ -614,7 +616,7 @@ img {
   color: #00aa32;
   font-weight: 500;
 }
-.top_recruit .inner .btn_flex .box .pos span {
+.top_recruit .inner .btn_flex .box a .pos span {
   font-size: 14px;
 }
 .top_recruit .inner .btn_flex .mgn_top {
@@ -1675,6 +1677,95 @@ img {
   margin-top: 80px;
 }
 
+/*ーーーーーーーーーーーーーーーー*/
+/*ーーーーーーーーーーーーーーーー*/
+.inquiry__wrap .formwrap {
+  margin-top: 80px;
+  /*――――「表」デザイン――――*/
+  /*―――――表示―――――*/
+  /*――「送信ボタン」デザイン――*/
+  /*―――「必須」デザイン―――*/
+  /*―――送信完了画面―――*/
+}
+.inquiry__wrap .formwrap .mw_wp_form input[type=email],
+.inquiry__wrap .formwrap .mw_wp_form input[type=tel],
+.inquiry__wrap .formwrap .mw_wp_form input[type=text],
+.inquiry__wrap .formwrap .mw_wp_form textarea {
+  padding: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+.inquiry__wrap .formwrap .cform th {
+  width: 25%;
+  padding: 10px 0px 10px 15px;
+  text-align: left;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 48px;
+  font-weight: 500;
+}
+.inquiry__wrap .formwrap .cform td {
+  width: 75%;
+  line-height: 200%;
+  padding: 10px 10px;
+}
+.inquiry__wrap .formwrap .cform {
+  width: 100%;
+  margin: auto;
+}
+.inquiry__wrap .formwrap .cform table {
+  width: 100%;
+}
+.inquiry__wrap .formwrap .cform option,
+.inquiry__wrap .formwrap .cform textarea,
+.inquiry__wrap .formwrap .cform input[type=text],
+.inquiry__wrap .formwrap .cform input[type=email],
+.inquiry__wrap .formwrap .cform input[type=search],
+.inquiry__wrap .formwrap .cform input[type=url] {
+  width: 100%;
+}
+.inquiry__wrap .formwrap .btn input {
+  background-color: #effaf2;
+  border: 1px solid #00aa32;
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin: 0 auto;
+  padding: 10px 35px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+.inquiry__wrap .formwrap .btn {
+  text-align: center;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.inquiry__wrap .formwrap .btn input:hover {
+  background: #00aa32;
+  color: #fff;
+  cursor: pointer;
+}
+.inquiry__wrap .formwrap .required-srt {
+  font-size: 12px;
+  padding: 3px 6px 5px;
+  border-radius: 6px;
+  margin-left: 10px;
+  background: #00aa32;
+  color: #fff;
+}
+.inquiry__wrap .formwrap .form__done dl dt {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.inquiry__wrap .formwrap .form__done dl dd {
+  text-align: center;
+}
+
 /*-----------------------------------------------------*/
 /*-----------------------------------------------------*/
 .wp-pagenavi {
@@ -2333,10 +2424,13 @@ img {
     width: 85%;
     position: relative;
   }
-  .top_recruit .inner .btn_flex .box .img img {
+  .top_recruit .inner .btn_flex .box a {
+    position: static;
+  }
+  .top_recruit .inner .btn_flex .box a .img img {
     border-radius: 10px;
   }
-  .top_recruit .inner .btn_flex .box .pos {
+  .top_recruit .inner .btn_flex .box a .pos {
     padding: 10px 5%;
     bottom: 10px;
     left: 0;
@@ -2344,7 +2438,7 @@ img {
     width: 90%;
     border-radius: 0;
   }
-  .top_recruit .inner .btn_flex .box .pos span {
+  .top_recruit .inner .btn_flex .box a .pos span {
     font-size: 10px;
   }
   .top_recruit .inner .btn_flex .mgn_top {
@@ -3152,6 +3246,31 @@ img {
   }
   .inquiry__wrap .img {
     margin-top: 80px;
+  }
+
+  /*ーーーーーーーーーーーーーーーー*/
+  /*ーーーーーーーーーーーーーーーー*/
+  .inquiry__wrap .formwrap {
+    margin-top: 30px;
+  }
+  .inquiry__wrap .formwrap .cform th,
+.inquiry__wrap .formwrap .cform td {
+    width: 100%;
+    padding: 0;
+    display: block;
+    border-top: none;
+  }
+  .inquiry__wrap .formwrap .cform th {
+    font-size: 14px;
+  }
+  .inquiry__wrap .formwrap .form__done dl dt {
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 2.5;
+  }
+  .inquiry__wrap .formwrap .form__done dl dd {
+    line-height: 2.5;
+    font-size: 14px;
   }
 
   /*-----------------------------------------------------*/

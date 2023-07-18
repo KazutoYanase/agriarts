@@ -187,7 +187,7 @@ img {
 /* -=-=-=- Fade効果 -=-=-=- */
 .fade {
     opacity: 0;
-    transform: translateY(36px);
+    transform: translateY(25px);
     transition: all 1000ms;
 }
 
@@ -699,30 +699,33 @@ img {
 
             .box {
                 width: 485px;
-                position: relative;
-
-                .img {
-                    img {
+                a {
+                    position: relative;
+                    
+                    .img {
+                        img {
+                            border-radius: 10px;
+                        }
+                    }
+                    
+                    .pos {
                         border-radius: 10px;
+                        background-color: rgba(255, 255, 255, 0.75);
+                        padding: 20px 30px;
+                        width: fit-content;
+                        position: absolute;
+                        bottom: 20px;
+                        right: 30px;
+                        font-size: 24px;
+                        color: #00aa32;
+                        font-weight: 500;
+                    
+                        span {
+                            font-size: 14px;
+                        }
                     }
                 }
-
-                .pos {
-                    border-radius: 10px;
-                    background-color: rgba(255, 255, 255, 0.75);
-                    padding: 20px 30px;
-                    width: fit-content;
-                    position: absolute;
-                    bottom: 20px;
-                    right: 30px;
-                    font-size: 24px;
-                    color: #00aa32;
-                    font-weight: 500;
-
-                    span {
-                        font-size: 14px;
-                    }
-                }
+                
             }
 
             .mgn_top {
@@ -1975,7 +1978,7 @@ img {
                 vertical-align: top;
                 line-height: 1.75;
             }
-            
+
             .topline {
                 border-top: 1px solid #ddd;
                 font-size: 25px;
@@ -2007,6 +2010,113 @@ img {
 
     .img {
         margin-top: 80px;
+    }
+}
+
+/*ーーーーーーーーーーーーーーーー*/
+//　　MW WP Formカスタマイズ
+/*ーーーーーーーーーーーーーーーー*/
+.inquiry__wrap .formwrap {
+    margin-top: 80px;
+
+    .mw_wp_form input[type="email"],
+    .mw_wp_form input[type="tel"],
+    .mw_wp_form input[type="text"],
+    .mw_wp_form textarea {
+        padding: 1em;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+        border: 1px solid #ccc;
+    }
+
+    /*――――「表」デザイン――――*/
+    .cform th {
+        width: 25%;
+        padding: 10px 0px 10px 15px;
+        text-align: left;
+        vertical-align: top;
+        font-size: 16px;
+        line-height: 48px;
+        font-weight: 500;
+    }
+
+    .cform td {
+        width: 75%;
+        line-height: 200%;
+        padding: 10px 10px;
+    }
+
+    /*―――――表示―――――*/
+    .cform {
+        width: 100%;
+        margin: auto;
+
+        table {
+            width: 100%;
+        }
+    }
+
+    .cform option,
+    .cform textarea,
+    .cform input[type=text],
+    .cform input[type=email],
+    .cform input[type=search],
+    .cform input[type=url] {
+        width: 100%;
+    }
+
+    /*――「送信ボタン」デザイン――*/
+    .btn input {
+        background-color: #effaf2;
+        border: 1px solid #00aa32;
+        color: #333;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 0.15em;
+        margin: 0 auto;
+        padding: 10px 35px;
+        border-radius: 10px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .btn {
+        text-align: center;
+        margin-top: 50px;
+        cursor: pointer;
+    }
+
+    .btn input:hover {
+        background: #00aa32;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    /*―――「必須」デザイン―――*/
+    .required-srt {
+        font-size: 12px;
+        padding: 3px 6px 5px;
+        border-radius: 6px;
+        margin-left: 10px;
+
+        background: #00aa32;
+        color: #fff;
+    }
+
+    /*―――送信完了画面―――*/
+    .form__done {
+        dl {
+            dt {
+                text-align: center;
+                font-size: 20px;
+                margin-bottom: 50px;
+            }
+
+            dd {
+                text-align: center;
+            }
+        }
     }
 }
 

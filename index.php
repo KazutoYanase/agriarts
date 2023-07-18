@@ -157,7 +157,7 @@ get_header(); ?>
                 </a>
                 <a href="<?= esc_url(home_url('/overview/#profile')); ?>">
                     <div class="maru fade">
-                        <div>会社概要</div>
+                        <div>企業概要</div>
                     </div>
                 </a>
                 <a href="<?= esc_url(home_url('/overview/#history')); ?>">

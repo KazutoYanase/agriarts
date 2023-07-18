@@ -169,13 +169,13 @@ get_header(); ?>
         </div>
     </div>
     <div class="job_tit" id="sales">
-        <div class="ph fade"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__01_a.jpg" alt=""></div>
+        <div class="ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__01_a.jpg" alt=""></div>
         <div class="txt">
             <div class="jpn">フィールドアドバイザー</div>
             <div class="eng">Field Advisor</div>
         </div>
     </div>
-    <div class="name_wrap">
+    <div class="name_wrap fade">
         <div class="ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__01_b.jpg" alt=""></div>
         <div class="box">
             <div class="name">舩本 詠二</div>
@@ -207,13 +207,13 @@ get_header(); ?>
 
 <div class="rec__inter">
     <div class="job_tit" id="vinyl">
-        <div class="ph fade"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__02_a.jpg" alt=""></div>
+        <div class="ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__02_a.jpg" alt=""></div>
         <div class="txt">
             <div class="jpn">ハウス用ビニール加工</div>
             <div class="eng">Vinyl Machining for Greenhouse</div>
         </div>
     </div>
-    <div class="name_wrap">
+    <div class="name_wrap fade">
         <div class="ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__02_b.jpg" alt=""></div>
         <div class="box">
             <div class="name">長井 照憲</div>
@@ -236,13 +236,13 @@ get_header(); ?>
 
 <div class="rec__inter">
     <div class="job_tit" id="agri">
-        <div class="ph fade"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__03_a.jpg" alt=""></div>
+        <div class="ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__03_a.jpg" alt=""></div>
         <div class="txt">
             <div class="jpn">青果生産</div>
             <div class="eng">Agricultural Production</div>
         </div>
     </div>
-    <div class="name_wrap">
+    <div class="name_wrap fade">
         <div class="ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__03_b.jpg" alt=""></div>
         <div class="box">
             <div class="name">山田 朋文</div>
@@ -265,13 +265,13 @@ get_header(); ?>
 
 <div class="rec__inter">
     <div class="job_tit" id="flower">
-        <div class="ph fade"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__04_a.jpg" alt=""></div>
+        <div class="ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__04_a.jpg" alt=""></div>
         <div class="txt">
             <div class="jpn">花卉販売</div>
             <div class="eng">Flower Sales</div>
         </div>
     </div>
-    <div class="name_wrap">
+    <div class="name_wrap fade">
         <div class="ph"><img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__04_b.jpg" alt=""></div>
         <div class="box">
             <div class="name">新納 悦子</div>
@@ -403,9 +403,8 @@ get_header(); ?>
         <div class="jpn">採用に関するお問い合わせ</div>
         <div class="eng">Inquiry</div>
     </div>
-    <div class="img">
-        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__form_pc.svg" alt="" class="pc_inline">
-        <img src="<?= esc_url(get_template_directory_uri()); ?>/asset/img/rec__form_sp.svg" alt="" class="sp_inline">
+    <div class="formwrap">
+        <?php echo do_shortcode('[mwform_formkey key="142"]'); ?>
     </div>
 </div>
 <script type="text/javascript" src="<?= esc_url(get_template_directory_uri()); ?>/asset/js/slick.min.js"></script>

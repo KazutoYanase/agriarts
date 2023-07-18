@@ -35,8 +35,6 @@
 	<meta name="twitter:image" content="<?php set_meta_image(); ?>">
 	<meta name="twitter:url" content="<?php set_meta_ogurl(); ?>">
 
-	<?php wp_head(); ?>
-
 	<link rel="icon" href="<?= esc_url(get_template_directory_uri()); ?>/asset/css/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="<?= esc_url(get_template_directory_uri()); ?>/asset/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="<?= esc_url(get_template_directory_uri()); ?>/asset/css/slick.css" media="screen">
@@ -64,6 +62,7 @@
 			})
 		});
 	</script>
+	<?php wp_head(); ?>
 </head>
 
 
