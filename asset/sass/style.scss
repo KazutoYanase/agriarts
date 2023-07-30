@@ -699,33 +699,33 @@ img {
 
             .box {
                 width: 485px;
+
                 a {
-                    position: relative;
-                    
                     .img {
+                        position: relative;
+
                         img {
                             border-radius: 10px;
                         }
-                    }
-                    
-                    .pos {
-                        border-radius: 10px;
-                        background-color: rgba(255, 255, 255, 0.75);
-                        padding: 20px 30px;
-                        width: fit-content;
-                        position: absolute;
-                        bottom: 20px;
-                        right: 30px;
-                        font-size: 24px;
-                        color: #00aa32;
-                        font-weight: 500;
-                    
-                        span {
-                            font-size: 14px;
+
+                        .pos {
+                            border-radius: 10px;
+                            background-color: rgba(255, 255, 255, 0.75);
+                            padding: 20px 30px;
+                            width: fit-content;
+                            position: absolute;
+                            bottom: 20px;
+                            right: 30px;
+                            font-size: 24px;
+                            color: #00aa32;
+                            font-weight: 500;
+
+                            span {
+                                font-size: 14px;
+                            }
                         }
                     }
                 }
-                
             }
 
             .mgn_top {

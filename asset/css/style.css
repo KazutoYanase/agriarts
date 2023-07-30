@@ -598,13 +598,13 @@ img {
 .top_recruit .inner .btn_flex .box {
   width: 485px;
 }
-.top_recruit .inner .btn_flex .box a {
+.top_recruit .inner .btn_flex .box a .img {
   position: relative;
 }
 .top_recruit .inner .btn_flex .box a .img img {
   border-radius: 10px;
 }
-.top_recruit .inner .btn_flex .box a .pos {
+.top_recruit .inner .btn_flex .box a .img .pos {
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.75);
   padding: 20px 30px;
@@ -616,7 +616,7 @@ img {
   color: #00aa32;
   font-weight: 500;
 }
-.top_recruit .inner .btn_flex .box a .pos span {
+.top_recruit .inner .btn_flex .box a .img .pos span {
   font-size: 14px;
 }
 .top_recruit .inner .btn_flex .mgn_top {
@@ -2430,7 +2430,7 @@ img {
   .top_recruit .inner .btn_flex .box a .img img {
     border-radius: 10px;
   }
-  .top_recruit .inner .btn_flex .box a .pos {
+  .top_recruit .inner .btn_flex .box a .img .pos {
     padding: 10px 5%;
     bottom: 10px;
     left: 0;
@@ -2438,7 +2438,7 @@ img {
     width: 90%;
     border-radius: 0;
   }
-  .top_recruit .inner .btn_flex .box a .pos span {
+  .top_recruit .inner .btn_flex .box a .img .pos span {
     font-size: 10px;
   }
   .top_recruit .inner .btn_flex .mgn_top {

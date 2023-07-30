@@ -46,7 +46,7 @@ get_header(); ?>
   <div class="inner">
     <div class="date"><?= esc_html(get_post_time("Y.m.d")); ?></div>
   </div>
-  <div class="title fade"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+  <div class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
 </div>
 
 
